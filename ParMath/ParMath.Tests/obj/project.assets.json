@@ -1225,6 +1225,15 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "ParMath/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ParMath.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParMath.dll": {}
+        }
       }
     }
   },
@@ -4613,13 +4622,19 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "ParMath/1.0.0": {
+      "type": "project",
+      "path": "../ParMath/ParMath.csproj",
+      "msbuildProject": "../ParMath/ParMath.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "NUnit >= 3.12.0",
-      "NUnit3TestAdapter >= 3.16.1"
+      "NUnit3TestAdapter >= 3.16.1",
+      "ParMath >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4648,7 +4663,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
+              "projectPath": "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

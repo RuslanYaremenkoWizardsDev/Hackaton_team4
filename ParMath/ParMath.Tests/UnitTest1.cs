@@ -1,9 +1,11 @@
 using NUnit.Framework;
+using ParMath.Class;
 
 namespace ParMath.Tests
 {
     public class Tests
     {
+        private Engine _engine;
         [SetUp]
         public void Setup()
         {

@@ -27,7 +27,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
+                "projectPath": "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -70,6 +74,16 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj",
+        "projectName": "ParMath",
+        "projectPath": "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }

@@ -1,0 +1,4 @@
+C:\Users\finau\RiderProjects\Hackaton_team4\ParMath\ParMath\obj\Debug\ParMath.csprojAssemblyReference.cache
+C:\Users\finau\RiderProjects\Hackaton_team4\ParMath\ParMath\obj\Debug\ParMath.Properties.Resources.resources
+C:\Users\finau\RiderProjects\Hackaton_team4\ParMath\ParMath\obj\Debug\ParMath.csproj.GenerateResource.cache
+C:\Users\finau\RiderProjects\Hackaton_team4\ParMath\ParMath\obj\Debug\ParMath.csproj.CoreCompileInputs.cache

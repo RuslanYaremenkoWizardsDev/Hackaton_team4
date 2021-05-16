@@ -44,8 +44,24 @@ namespace ParMath.Class
 
         public User(string username, string password)
         {
-            Username = username;
-            Password = password;
+            if (username.Length <= 3 || username.Length >= 255)
+            {
+                throw new ArgumentException("Error: username most be ragne 4..255 simbol.");
+            }
+            else
+            {
+                Username = username;
+            }
+
+            if (password.Length < 6 || password.Length >= 255)
+            {
+                throw new ArgumentException("Error: password most be include");
+            }
+            else
+            {
+                password = password.Replace(" ", "");
+                Password = password;
+            }
         }
     }
 }

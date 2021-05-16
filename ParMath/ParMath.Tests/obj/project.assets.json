@@ -4638,28 +4638,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Maksim\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\nhevg\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maksim\\source\\repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
       "projectName": "ParMath.Tests",
-      "projectPath": "C:\\Users\\Maksim\\source\\repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
-      "packagesPath": "C:\\Users\\Maksim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maksim\\source\\repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\obj\\",
+      "projectPath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
+      "packagesPath": "C:\\Users\\nhevg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Maksim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nhevg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -4672,8 +4669,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Maksim\\source\\repos\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
-              "projectPath": "C:\\Users\\Maksim\\source\\repos\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
+            "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
+              "projectPath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
             }
           }
         }
@@ -4716,7 +4713,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

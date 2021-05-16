@@ -32,12 +32,6 @@ namespace ParMath
             this.LogOutbutton = new System.Windows.Forms.Button();
             this.TabControl = new System.Windows.Forms.TabControl();
             this.TournamentsTabPage = new System.Windows.Forms.TabPage();
-            this.CreateTournamentTabPage = new System.Windows.Forms.TabPage();
-            this.StatsTabPage = new System.Windows.Forms.TabPage();
-            this.SearchByStartDateButton = new System.Windows.Forms.Button();
-            this.SearchByRegDateButton = new System.Windows.Forms.Button();
-            this.SearchByStateButton = new System.Windows.Forms.Button();
-            this.ClearAllButton = new System.Windows.Forms.Button();
             this.TournamentsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.NameTournamentsRichTextBox = new System.Windows.Forms.RichTextBox();
             this.ModeRichTextBox = new System.Windows.Forms.RichTextBox();
@@ -49,39 +43,50 @@ namespace ParMath
             this.ParticipantsRichTextBox = new System.Windows.Forms.RichTextBox();
             this.ScenarioRichTextBox = new System.Windows.Forms.RichTextBox();
             this.ActionsRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.FieldsButton = new System.Windows.Forms.Button();
+            this.ClearAllButton = new System.Windows.Forms.Button();
+            this.CreateTournamentTabPage = new System.Windows.Forms.TabPage();
             this.CupGridButton = new System.Windows.Forms.Button();
-            this.PlayersPanel = new System.Windows.Forms.Panel();
-            this.TournamentsPanel = new System.Windows.Forms.Panel();
-            this.PlayersLabel = new System.Windows.Forms.Label();
-            this.TournamentsLabel = new System.Windows.Forms.Label();
-            this.PlayersStatsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.FieldsButton = new System.Windows.Forms.Button();
+            this.StatsTabPage = new System.Windows.Forms.TabPage();
             this.TournamentsStatsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.ActiveRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.FinishedRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.NotStartedRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.NumberOfTournamentsRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.PlayersStatsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.NameStatsRichTextBox = new System.Windows.Forms.RichTextBox();
             this.GamesRichTextBox = new System.Windows.Forms.RichTextBox();
             this.WinsRichTextBox = new System.Windows.Forms.RichTextBox();
             this.LosesRichTextBox = new System.Windows.Forms.RichTextBox();
             this.CupWinsRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.NumberOfTournamentsRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.ActiveRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.FinishedRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.NotStartedRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.TournamentsPanel = new System.Windows.Forms.Panel();
+            this.TournamentsLabel = new System.Windows.Forms.Label();
+            this.PlayersPanel = new System.Windows.Forms.Panel();
+            this.PlayersLabel = new System.Windows.Forms.Label();
+            this.SearchByStartDateLabel = new System.Windows.Forms.Label();
+            this.SearchByRegDateLabel = new System.Windows.Forms.Label();
+            this.SearchByStateLabel = new System.Windows.Forms.Label();
+            this.FromStartDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.ToStartDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.FromRegDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.ToRegDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.StateComboBox = new System.Windows.Forms.ComboBox();
             this.TabControl.SuspendLayout();
             this.TournamentsTabPage.SuspendLayout();
+            this.TournamentsTableLayoutPanel.SuspendLayout();
             this.CreateTournamentTabPage.SuspendLayout();
             this.StatsTabPage.SuspendLayout();
-            this.TournamentsTableLayoutPanel.SuspendLayout();
-            this.PlayersPanel.SuspendLayout();
-            this.TournamentsPanel.SuspendLayout();
-            this.PlayersStatsTableLayoutPanel.SuspendLayout();
             this.TournamentsStatsTableLayoutPanel.SuspendLayout();
+            this.PlayersStatsTableLayoutPanel.SuspendLayout();
+            this.TournamentsPanel.SuspendLayout();
+            this.PlayersPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // LogOutbutton
             // 
             this.LogOutbutton.Location = new System.Drawing.Point(2083, 12);
             this.LogOutbutton.Name = "LogOutbutton";
-            this.LogOutbutton.Size = new System.Drawing.Size(170, 102);
+            this.LogOutbutton.Size = new System.Drawing.Size(150, 100);
             this.LogOutbutton.TabIndex = 0;
             this.LogOutbutton.Text = "Log out";
             this.LogOutbutton.UseVisualStyleBackColor = true;
@@ -101,11 +106,16 @@ namespace ParMath
             // 
             // TournamentsTabPage
             // 
+            this.TournamentsTabPage.Controls.Add(this.StateComboBox);
+            this.TournamentsTabPage.Controls.Add(this.ToRegDateTimePicker);
+            this.TournamentsTabPage.Controls.Add(this.FromRegDateTimePicker);
+            this.TournamentsTabPage.Controls.Add(this.ToStartDateTimePicker);
+            this.TournamentsTabPage.Controls.Add(this.FromStartDateTimePicker);
+            this.TournamentsTabPage.Controls.Add(this.SearchByStateLabel);
+            this.TournamentsTabPage.Controls.Add(this.SearchByRegDateLabel);
+            this.TournamentsTabPage.Controls.Add(this.SearchByStartDateLabel);
             this.TournamentsTabPage.Controls.Add(this.TournamentsTableLayoutPanel);
             this.TournamentsTabPage.Controls.Add(this.ClearAllButton);
-            this.TournamentsTabPage.Controls.Add(this.SearchByStateButton);
-            this.TournamentsTabPage.Controls.Add(this.SearchByRegDateButton);
-            this.TournamentsTabPage.Controls.Add(this.SearchByStartDateButton);
             this.TournamentsTabPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TournamentsTabPage.Location = new System.Drawing.Point(10, 141);
             this.TournamentsTabPage.Name = "TournamentsTabPage";
@@ -114,68 +124,6 @@ namespace ParMath
             this.TournamentsTabPage.TabIndex = 0;
             this.TournamentsTabPage.Text = "Tournaments";
             this.TournamentsTabPage.UseVisualStyleBackColor = true;
-            // 
-            // CreateTournamentTabPage
-            // 
-            this.CreateTournamentTabPage.Controls.Add(this.CupGridButton);
-            this.CreateTournamentTabPage.Controls.Add(this.FieldsButton);
-            this.CreateTournamentTabPage.Location = new System.Drawing.Point(10, 141);
-            this.CreateTournamentTabPage.Name = "CreateTournamentTabPage";
-            this.CreateTournamentTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.CreateTournamentTabPage.Size = new System.Drawing.Size(2221, 1049);
-            this.CreateTournamentTabPage.TabIndex = 1;
-            this.CreateTournamentTabPage.Text = "Create tournament";
-            this.CreateTournamentTabPage.UseVisualStyleBackColor = true;
-            // 
-            // StatsTabPage
-            // 
-            this.StatsTabPage.Controls.Add(this.TournamentsStatsTableLayoutPanel);
-            this.StatsTabPage.Controls.Add(this.PlayersStatsTableLayoutPanel);
-            this.StatsTabPage.Controls.Add(this.TournamentsPanel);
-            this.StatsTabPage.Controls.Add(this.PlayersPanel);
-            this.StatsTabPage.Location = new System.Drawing.Point(10, 141);
-            this.StatsTabPage.Name = "StatsTabPage";
-            this.StatsTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.StatsTabPage.Size = new System.Drawing.Size(2221, 1049);
-            this.StatsTabPage.TabIndex = 2;
-            this.StatsTabPage.Text = "Stats";
-            this.StatsTabPage.UseVisualStyleBackColor = true;
-            // 
-            // SearchByStartDateButton
-            // 
-            this.SearchByStartDateButton.Location = new System.Drawing.Point(15, 18);
-            this.SearchByStartDateButton.Name = "SearchByStartDateButton";
-            this.SearchByStartDateButton.Size = new System.Drawing.Size(450, 60);
-            this.SearchByStartDateButton.TabIndex = 0;
-            this.SearchByStartDateButton.Text = "Search by start date (from , to)";
-            this.SearchByStartDateButton.UseVisualStyleBackColor = true;
-            // 
-            // SearchByRegDateButton
-            // 
-            this.SearchByRegDateButton.Location = new System.Drawing.Point(683, 18);
-            this.SearchByRegDateButton.Name = "SearchByRegDateButton";
-            this.SearchByRegDateButton.Size = new System.Drawing.Size(450, 60);
-            this.SearchByRegDateButton.TabIndex = 1;
-            this.SearchByRegDateButton.Text = "Search by reg date (from, to)";
-            this.SearchByRegDateButton.UseVisualStyleBackColor = true;
-            // 
-            // SearchByStateButton
-            // 
-            this.SearchByStateButton.Location = new System.Drawing.Point(1350, 18);
-            this.SearchByStateButton.Name = "SearchByStateButton";
-            this.SearchByStateButton.Size = new System.Drawing.Size(450, 60);
-            this.SearchByStateButton.TabIndex = 2;
-            this.SearchByStateButton.Text = "Search by state";
-            this.SearchByStateButton.UseVisualStyleBackColor = true;
-            // 
-            // ClearAllButton
-            // 
-            this.ClearAllButton.Location = new System.Drawing.Point(2023, 18);
-            this.ClearAllButton.Name = "ClearAllButton";
-            this.ClearAllButton.Size = new System.Drawing.Size(180, 60);
-            this.ClearAllButton.TabIndex = 3;
-            this.ClearAllButton.Text = "Clear all";
-            this.ClearAllButton.UseVisualStyleBackColor = true;
             // 
             // TournamentsTableLayoutPanel
             // 
@@ -201,7 +149,7 @@ namespace ParMath
             this.TournamentsTableLayoutPanel.Controls.Add(this.ScenarioRichTextBox, 8, 0);
             this.TournamentsTableLayoutPanel.Controls.Add(this.ActionsRichTextBox, 9, 0);
             this.TournamentsTableLayoutPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TournamentsTableLayoutPanel.Location = new System.Drawing.Point(15, 125);
+            this.TournamentsTableLayoutPanel.Location = new System.Drawing.Point(15, 262);
             this.TournamentsTableLayoutPanel.Name = "TournamentsTableLayoutPanel";
             this.TournamentsTableLayoutPanel.RowCount = 3;
             this.TournamentsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -310,14 +258,26 @@ namespace ParMath
             this.ActionsRichTextBox.TabIndex = 9;
             this.ActionsRichTextBox.Text = "Actions";
             // 
-            // FieldsButton
+            // ClearAllButton
             // 
-            this.FieldsButton.Location = new System.Drawing.Point(27, 33);
-            this.FieldsButton.Name = "FieldsButton";
-            this.FieldsButton.Size = new System.Drawing.Size(1000, 800);
-            this.FieldsButton.TabIndex = 0;
-            this.FieldsButton.Text = "Fields";
-            this.FieldsButton.UseVisualStyleBackColor = true;
+            this.ClearAllButton.Location = new System.Drawing.Point(2050, 45);
+            this.ClearAllButton.Name = "ClearAllButton";
+            this.ClearAllButton.Size = new System.Drawing.Size(150, 100);
+            this.ClearAllButton.TabIndex = 3;
+            this.ClearAllButton.Text = "Clear all";
+            this.ClearAllButton.UseVisualStyleBackColor = true;
+            // 
+            // CreateTournamentTabPage
+            // 
+            this.CreateTournamentTabPage.Controls.Add(this.CupGridButton);
+            this.CreateTournamentTabPage.Controls.Add(this.FieldsButton);
+            this.CreateTournamentTabPage.Location = new System.Drawing.Point(10, 141);
+            this.CreateTournamentTabPage.Name = "CreateTournamentTabPage";
+            this.CreateTournamentTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.CreateTournamentTabPage.Size = new System.Drawing.Size(2221, 1049);
+            this.CreateTournamentTabPage.TabIndex = 1;
+            this.CreateTournamentTabPage.Text = "Create tournament";
+            this.CreateTournamentTabPage.UseVisualStyleBackColor = true;
             // 
             // CupGridButton
             // 
@@ -328,39 +288,83 @@ namespace ParMath
             this.CupGridButton.Text = "Cup grid";
             this.CupGridButton.UseVisualStyleBackColor = true;
             // 
-            // PlayersPanel
+            // FieldsButton
             // 
-            this.PlayersPanel.Controls.Add(this.PlayersLabel);
-            this.PlayersPanel.Location = new System.Drawing.Point(16, 31);
-            this.PlayersPanel.Name = "PlayersPanel";
-            this.PlayersPanel.Size = new System.Drawing.Size(2150, 100);
-            this.PlayersPanel.TabIndex = 0;
+            this.FieldsButton.Location = new System.Drawing.Point(27, 33);
+            this.FieldsButton.Name = "FieldsButton";
+            this.FieldsButton.Size = new System.Drawing.Size(1000, 800);
+            this.FieldsButton.TabIndex = 0;
+            this.FieldsButton.Text = "Fields";
+            this.FieldsButton.UseVisualStyleBackColor = true;
             // 
-            // TournamentsPanel
+            // StatsTabPage
             // 
-            this.TournamentsPanel.Controls.Add(this.TournamentsLabel);
-            this.TournamentsPanel.Location = new System.Drawing.Point(16, 453);
-            this.TournamentsPanel.Name = "TournamentsPanel";
-            this.TournamentsPanel.Size = new System.Drawing.Size(2150, 100);
-            this.TournamentsPanel.TabIndex = 1;
+            this.StatsTabPage.Controls.Add(this.TournamentsStatsTableLayoutPanel);
+            this.StatsTabPage.Controls.Add(this.PlayersStatsTableLayoutPanel);
+            this.StatsTabPage.Controls.Add(this.TournamentsPanel);
+            this.StatsTabPage.Controls.Add(this.PlayersPanel);
+            this.StatsTabPage.Location = new System.Drawing.Point(10, 141);
+            this.StatsTabPage.Name = "StatsTabPage";
+            this.StatsTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.StatsTabPage.Size = new System.Drawing.Size(2221, 1049);
+            this.StatsTabPage.TabIndex = 2;
+            this.StatsTabPage.Text = "Stats";
+            this.StatsTabPage.UseVisualStyleBackColor = true;
             // 
-            // PlayersLabel
+            // TournamentsStatsTableLayoutPanel
             // 
-            this.PlayersLabel.AutoSize = true;
-            this.PlayersLabel.Location = new System.Drawing.Point(975, 22);
-            this.PlayersLabel.Name = "PlayersLabel";
-            this.PlayersLabel.Size = new System.Drawing.Size(191, 55);
-            this.PlayersLabel.TabIndex = 0;
-            this.PlayersLabel.Text = "Players";
+            this.TournamentsStatsTableLayoutPanel.ColumnCount = 4;
+            this.TournamentsStatsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.TournamentsStatsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.TournamentsStatsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.TournamentsStatsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.TournamentsStatsTableLayoutPanel.Controls.Add(this.ActiveRichTextBox, 1, 0);
+            this.TournamentsStatsTableLayoutPanel.Controls.Add(this.FinishedRichTextBox, 2, 0);
+            this.TournamentsStatsTableLayoutPanel.Controls.Add(this.NotStartedRichTextBox, 3, 0);
+            this.TournamentsStatsTableLayoutPanel.Controls.Add(this.NumberOfTournamentsRichTextBox, 0, 0);
+            this.TournamentsStatsTableLayoutPanel.Location = new System.Drawing.Point(16, 665);
+            this.TournamentsStatsTableLayoutPanel.Name = "TournamentsStatsTableLayoutPanel";
+            this.TournamentsStatsTableLayoutPanel.RowCount = 2;
+            this.TournamentsStatsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TournamentsStatsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.TournamentsStatsTableLayoutPanel.Size = new System.Drawing.Size(2150, 211);
+            this.TournamentsStatsTableLayoutPanel.TabIndex = 3;
             // 
-            // TournamentsLabel
+            // ActiveRichTextBox
             // 
-            this.TournamentsLabel.AutoSize = true;
-            this.TournamentsLabel.Location = new System.Drawing.Point(917, 23);
-            this.TournamentsLabel.Name = "TournamentsLabel";
-            this.TournamentsLabel.Size = new System.Drawing.Size(319, 55);
-            this.TournamentsLabel.TabIndex = 0;
-            this.TournamentsLabel.Text = "Tournaments";
+            this.ActiveRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ActiveRichTextBox.Location = new System.Drawing.Point(540, 3);
+            this.ActiveRichTextBox.Name = "ActiveRichTextBox";
+            this.ActiveRichTextBox.Size = new System.Drawing.Size(531, 99);
+            this.ActiveRichTextBox.TabIndex = 1;
+            this.ActiveRichTextBox.Text = "Active";
+            // 
+            // FinishedRichTextBox
+            // 
+            this.FinishedRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FinishedRichTextBox.Location = new System.Drawing.Point(1077, 3);
+            this.FinishedRichTextBox.Name = "FinishedRichTextBox";
+            this.FinishedRichTextBox.Size = new System.Drawing.Size(525, 99);
+            this.FinishedRichTextBox.TabIndex = 2;
+            this.FinishedRichTextBox.Text = "Finished";
+            // 
+            // NotStartedRichTextBox
+            // 
+            this.NotStartedRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NotStartedRichTextBox.Location = new System.Drawing.Point(1614, 3);
+            this.NotStartedRichTextBox.Name = "NotStartedRichTextBox";
+            this.NotStartedRichTextBox.Size = new System.Drawing.Size(533, 99);
+            this.NotStartedRichTextBox.TabIndex = 3;
+            this.NotStartedRichTextBox.Text = "Not started";
+            // 
+            // NumberOfTournamentsRichTextBox
+            // 
+            this.NumberOfTournamentsRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NumberOfTournamentsRichTextBox.Location = new System.Drawing.Point(3, 3);
+            this.NumberOfTournamentsRichTextBox.Name = "NumberOfTournamentsRichTextBox";
+            this.NumberOfTournamentsRichTextBox.Size = new System.Drawing.Size(531, 99);
+            this.NumberOfTournamentsRichTextBox.TabIndex = 0;
+            this.NumberOfTournamentsRichTextBox.Text = "Number of tournaments";
             // 
             // PlayersStatsTableLayoutPanel
             // 
@@ -382,25 +386,6 @@ namespace ParMath
             this.PlayersStatsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.PlayersStatsTableLayoutPanel.Size = new System.Drawing.Size(2150, 192);
             this.PlayersStatsTableLayoutPanel.TabIndex = 2;
-            // 
-            // TournamentsStatsTableLayoutPanel
-            // 
-            this.TournamentsStatsTableLayoutPanel.ColumnCount = 4;
-            this.TournamentsStatsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.TournamentsStatsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.TournamentsStatsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.TournamentsStatsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.TournamentsStatsTableLayoutPanel.Controls.Add(this.ActiveRichTextBox, 1, 0);
-            this.TournamentsStatsTableLayoutPanel.Controls.Add(this.FinishedRichTextBox, 2, 0);
-            this.TournamentsStatsTableLayoutPanel.Controls.Add(this.NotStartedRichTextBox, 3, 0);
-            this.TournamentsStatsTableLayoutPanel.Controls.Add(this.NumberOfTournamentsRichTextBox, 0, 0);
-            this.TournamentsStatsTableLayoutPanel.Location = new System.Drawing.Point(16, 665);
-            this.TournamentsStatsTableLayoutPanel.Name = "TournamentsStatsTableLayoutPanel";
-            this.TournamentsStatsTableLayoutPanel.RowCount = 2;
-            this.TournamentsStatsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TournamentsStatsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TournamentsStatsTableLayoutPanel.Size = new System.Drawing.Size(2150, 211);
-            this.TournamentsStatsTableLayoutPanel.TabIndex = 3;
             // 
             // NameStatsRichTextBox
             // 
@@ -447,63 +432,129 @@ namespace ParMath
             this.CupWinsRichTextBox.TabIndex = 4;
             this.CupWinsRichTextBox.Text = "Cup wins";
             // 
-            // NumberOfTournamentsRichTextBox
+            // TournamentsPanel
             // 
-            this.NumberOfTournamentsRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NumberOfTournamentsRichTextBox.Location = new System.Drawing.Point(3, 3);
-            this.NumberOfTournamentsRichTextBox.Name = "NumberOfTournamentsRichTextBox";
-            this.NumberOfTournamentsRichTextBox.Size = new System.Drawing.Size(531, 99);
-            this.NumberOfTournamentsRichTextBox.TabIndex = 0;
-            this.NumberOfTournamentsRichTextBox.Text = "Number of tournaments";
+            this.TournamentsPanel.Controls.Add(this.TournamentsLabel);
+            this.TournamentsPanel.Location = new System.Drawing.Point(16, 453);
+            this.TournamentsPanel.Name = "TournamentsPanel";
+            this.TournamentsPanel.Size = new System.Drawing.Size(2150, 100);
+            this.TournamentsPanel.TabIndex = 1;
             // 
-            // ActiveRichTextBox
+            // TournamentsLabel
             // 
-            this.ActiveRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ActiveRichTextBox.Location = new System.Drawing.Point(540, 3);
-            this.ActiveRichTextBox.Name = "ActiveRichTextBox";
-            this.ActiveRichTextBox.Size = new System.Drawing.Size(531, 99);
-            this.ActiveRichTextBox.TabIndex = 1;
-            this.ActiveRichTextBox.Text = "Active";
+            this.TournamentsLabel.AutoSize = true;
+            this.TournamentsLabel.Location = new System.Drawing.Point(917, 23);
+            this.TournamentsLabel.Name = "TournamentsLabel";
+            this.TournamentsLabel.Size = new System.Drawing.Size(319, 55);
+            this.TournamentsLabel.TabIndex = 0;
+            this.TournamentsLabel.Text = "Tournaments";
             // 
-            // FinishedRichTextBox
+            // PlayersPanel
             // 
-            this.FinishedRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FinishedRichTextBox.Location = new System.Drawing.Point(1077, 3);
-            this.FinishedRichTextBox.Name = "FinishedRichTextBox";
-            this.FinishedRichTextBox.Size = new System.Drawing.Size(525, 99);
-            this.FinishedRichTextBox.TabIndex = 2;
-            this.FinishedRichTextBox.Text = "Finished";
+            this.PlayersPanel.Controls.Add(this.PlayersLabel);
+            this.PlayersPanel.Location = new System.Drawing.Point(16, 31);
+            this.PlayersPanel.Name = "PlayersPanel";
+            this.PlayersPanel.Size = new System.Drawing.Size(2150, 100);
+            this.PlayersPanel.TabIndex = 0;
             // 
-            // NotStartedRichTextBox
+            // PlayersLabel
             // 
-            this.NotStartedRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NotStartedRichTextBox.Location = new System.Drawing.Point(1614, 3);
-            this.NotStartedRichTextBox.Name = "NotStartedRichTextBox";
-            this.NotStartedRichTextBox.Size = new System.Drawing.Size(533, 99);
-            this.NotStartedRichTextBox.TabIndex = 3;
-            this.NotStartedRichTextBox.Text = "Not started";
+            this.PlayersLabel.AutoSize = true;
+            this.PlayersLabel.Location = new System.Drawing.Point(975, 22);
+            this.PlayersLabel.Name = "PlayersLabel";
+            this.PlayersLabel.Size = new System.Drawing.Size(191, 55);
+            this.PlayersLabel.TabIndex = 0;
+            this.PlayersLabel.Text = "Players";
             // 
-            // TournamentForm
+            // SearchByStartDateLabel
+            // 
+            this.SearchByStartDateLabel.AutoSize = true;
+            this.SearchByStartDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SearchByStartDateLabel.Location = new System.Drawing.Point(11, 39);
+            this.SearchByStartDateLabel.Name = "SearchByStartDateLabel";
+            this.SearchByStartDateLabel.Size = new System.Drawing.Size(472, 39);
+            this.SearchByStartDateLabel.TabIndex = 5;
+            this.SearchByStartDateLabel.Text = "Search by start date (from , to)";
+            // 
+            // SearchByRegDateLabel
+            // 
+            this.SearchByRegDateLabel.AutoSize = true;
+            this.SearchByRegDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SearchByRegDateLabel.Location = new System.Drawing.Point(777, 39);
+            this.SearchByRegDateLabel.Name = "SearchByRegDateLabel";
+            this.SearchByRegDateLabel.Size = new System.Drawing.Size(447, 39);
+            this.SearchByRegDateLabel.TabIndex = 6;
+            this.SearchByRegDateLabel.Text = "Search by reg date (from, to)";
+            // 
+            // SearchByStateLabel
+            // 
+            this.SearchByStateLabel.AutoSize = true;
+            this.SearchByStateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SearchByStateLabel.Location = new System.Drawing.Point(1554, 39);
+            this.SearchByStateLabel.Name = "SearchByStateLabel";
+            this.SearchByStateLabel.Size = new System.Drawing.Size(252, 39);
+            this.SearchByStateLabel.TabIndex = 7;
+            this.SearchByStateLabel.Text = "Search by state";
+            // 
+            // FromStartDateTimePicker
+            // 
+            this.FromStartDateTimePicker.Location = new System.Drawing.Point(30, 103);
+            this.FromStartDateTimePicker.Name = "FromStartDateTimePicker";
+            this.FromStartDateTimePicker.Size = new System.Drawing.Size(200, 38);
+            this.FromStartDateTimePicker.TabIndex = 8;
+            // 
+            // ToStartDateTimePicker
+            // 
+            this.ToStartDateTimePicker.Location = new System.Drawing.Point(248, 103);
+            this.ToStartDateTimePicker.Name = "ToStartDateTimePicker";
+            this.ToStartDateTimePicker.Size = new System.Drawing.Size(200, 38);
+            this.ToStartDateTimePicker.TabIndex = 9;
+            // 
+            // FromRegDateTimePicker
+            // 
+            this.FromRegDateTimePicker.Location = new System.Drawing.Point(784, 103);
+            this.FromRegDateTimePicker.Name = "FromRegDateTimePicker";
+            this.FromRegDateTimePicker.Size = new System.Drawing.Size(200, 38);
+            this.FromRegDateTimePicker.TabIndex = 10;
+            // 
+            // ToRegDateTimePicker
+            // 
+            this.ToRegDateTimePicker.Location = new System.Drawing.Point(1001, 103);
+            this.ToRegDateTimePicker.Name = "ToRegDateTimePicker";
+            this.ToRegDateTimePicker.Size = new System.Drawing.Size(200, 38);
+            this.ToRegDateTimePicker.TabIndex = 11;
+            // 
+            // StateComboBox
+            // 
+            this.StateComboBox.FormattingEnabled = true;
+            this.StateComboBox.Location = new System.Drawing.Point(1561, 106);
+            this.StateComboBox.Name = "StateComboBox";
+            this.StateComboBox.Size = new System.Drawing.Size(245, 39);
+            this.StateComboBox.TabIndex = 12;
+            // 
+            // TournametForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2278, 1375);
             this.Controls.Add(this.TabControl);
             this.Controls.Add(this.LogOutbutton);
-            this.Name = "TournamentForm";
+            this.Name = "TournametForm";
             this.Text = "TournamentForm";
             this.TabControl.ResumeLayout(false);
             this.TournamentsTabPage.ResumeLayout(false);
+            this.TournamentsTabPage.PerformLayout();
+            this.TournamentsTableLayoutPanel.ResumeLayout(false);
             this.CreateTournamentTabPage.ResumeLayout(false);
             this.StatsTabPage.ResumeLayout(false);
-            this.TournamentsTableLayoutPanel.ResumeLayout(false);
-            this.PlayersPanel.ResumeLayout(false);
-            this.PlayersPanel.PerformLayout();
+            this.TournamentsStatsTableLayoutPanel.ResumeLayout(false);
+            this.PlayersStatsTableLayoutPanel.ResumeLayout(false);
             this.TournamentsPanel.ResumeLayout(false);
             this.TournamentsPanel.PerformLayout();
-            this.PlayersStatsTableLayoutPanel.ResumeLayout(false);
-            this.TournamentsStatsTableLayoutPanel.ResumeLayout(false);
+            this.PlayersPanel.ResumeLayout(false);
+            this.PlayersPanel.PerformLayout();
             this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -512,9 +563,6 @@ namespace ParMath
         private System.Windows.Forms.TabControl TabControl;
         private System.Windows.Forms.TabPage TournamentsTabPage;
         private System.Windows.Forms.Button ClearAllButton;
-        private System.Windows.Forms.Button SearchByStateButton;
-        private System.Windows.Forms.Button SearchByRegDateButton;
-        private System.Windows.Forms.Button SearchByStartDateButton;
         private System.Windows.Forms.TabPage CreateTournamentTabPage;
         private System.Windows.Forms.TabPage StatsTabPage;
         private System.Windows.Forms.TableLayoutPanel TournamentsTableLayoutPanel;
@@ -545,5 +593,13 @@ namespace ParMath
         private System.Windows.Forms.Label TournamentsLabel;
         private System.Windows.Forms.Panel PlayersPanel;
         private System.Windows.Forms.Label PlayersLabel;
+        private System.Windows.Forms.DateTimePicker ToRegDateTimePicker;
+        private System.Windows.Forms.DateTimePicker FromRegDateTimePicker;
+        private System.Windows.Forms.DateTimePicker ToStartDateTimePicker;
+        private System.Windows.Forms.DateTimePicker FromStartDateTimePicker;
+        private System.Windows.Forms.Label SearchByStateLabel;
+        private System.Windows.Forms.Label SearchByRegDateLabel;
+        private System.Windows.Forms.Label SearchByStartDateLabel;
+        private System.Windows.Forms.ComboBox StateComboBox;
     }
 }

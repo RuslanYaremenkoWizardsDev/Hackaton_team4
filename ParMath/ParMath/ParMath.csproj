@@ -55,12 +55,27 @@
     <Compile Include="AuthorizationForm.Designer.cs">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateTournamentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateTournamentForm.Designer.cs">
+      <DependentUpon>CreateTournamentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface\ITournament.cs" />
     <Compile Include="Interface\IUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TournametForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TournametForm.Designer.cs">
+      <DependentUpon>TournametForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AuthorizationForm.resx">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateTournamentForm.resx">
+      <DependentUpon>CreateTournamentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

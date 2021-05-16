@@ -35,7 +35,7 @@ namespace ParMath
             this.LevelButton = new System.Windows.Forms.Label();
             this.CountOfParticipantsLabel = new System.Windows.Forms.Label();
             this.StateLabel = new System.Windows.Forms.Label();
-            this.ScenarioLabel = new System.Windows.Forms.Label();
+            this.ScenaryLabel = new System.Windows.Forms.Label();
             this.PlaceLabel = new System.Windows.Forms.Label();
             this.DescriptionLabel = new System.Windows.Forms.Label();
             this.NameOfTournamentTextBox = new System.Windows.Forms.TextBox();
@@ -45,9 +45,10 @@ namespace ParMath
             this.LevelComboBox = new System.Windows.Forms.ComboBox();
             this.CountOfParticipantsComboBox = new System.Windows.Forms.ComboBox();
             this.StateComboBox = new System.Windows.Forms.ComboBox();
-            this.ScenarioComboBox = new System.Windows.Forms.ComboBox();
-            this.DescriptionListBox = new System.Windows.Forms.ListBox();
+            this.ScenaryComboBox = new System.Windows.Forms.ComboBox();
             this.Create = new System.Windows.Forms.Button();
+            this.DescriptionTextBox = new System.Windows.Forms.TextBox();
+            this.ErrorMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // NameOfTournamentLabel
@@ -110,15 +111,15 @@ namespace ParMath
             this.StateLabel.TabIndex = 5;
             this.StateLabel.Text = "State";
             // 
-            // ScenarioLabel
+            // ScenaryLabel
             // 
-            this.ScenarioLabel.AutoSize = true;
-            this.ScenarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ScenarioLabel.Location = new System.Drawing.Point(38, 301);
-            this.ScenarioLabel.Name = "ScenarioLabel";
-            this.ScenarioLabel.Size = new System.Drawing.Size(62, 16);
-            this.ScenarioLabel.TabIndex = 6;
-            this.ScenarioLabel.Text = "Scenario";
+            this.ScenaryLabel.AutoSize = true;
+            this.ScenaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ScenaryLabel.Location = new System.Drawing.Point(38, 301);
+            this.ScenaryLabel.Name = "ScenaryLabel";
+            this.ScenaryLabel.Size = new System.Drawing.Size(58, 16);
+            this.ScenaryLabel.TabIndex = 6;
+            this.ScenaryLabel.Text = "Scenary";
             // 
             // PlaceLabel
             // 
@@ -134,7 +135,7 @@ namespace ParMath
             // 
             this.DescriptionLabel.AutoSize = true;
             this.DescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DescriptionLabel.Location = new System.Drawing.Point(432, 50);
+            this.DescriptionLabel.Location = new System.Drawing.Point(426, 46);
             this.DescriptionLabel.Name = "DescriptionLabel";
             this.DescriptionLabel.Size = new System.Drawing.Size(76, 16);
             this.DescriptionLabel.TabIndex = 8;
@@ -146,6 +147,7 @@ namespace ParMath
             this.NameOfTournamentTextBox.Name = "NameOfTournamentTextBox";
             this.NameOfTournamentTextBox.Size = new System.Drawing.Size(123, 20);
             this.NameOfTournamentTextBox.TabIndex = 9;
+            this.NameOfTournamentTextBox.Text = "MyTournament";
             // 
             // PlaceTextBox
             // 
@@ -153,6 +155,7 @@ namespace ParMath
             this.PlaceTextBox.Name = "PlaceTextBox";
             this.PlaceTextBox.Size = new System.Drawing.Size(123, 20);
             this.PlaceTextBox.TabIndex = 10;
+            this.PlaceTextBox.Text = "Dnipro";
             // 
             // StartDateDateTimePicker
             // 
@@ -170,7 +173,12 @@ namespace ParMath
             // 
             // LevelComboBox
             // 
+            this.LevelComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.LevelComboBox.FormattingEnabled = true;
+            this.LevelComboBox.Items.AddRange(new object[] {
+            "Beginer",
+            "Midle",
+            "Advence"});
             this.LevelComboBox.Location = new System.Drawing.Point(204, 159);
             this.LevelComboBox.Name = "LevelComboBox";
             this.LevelComboBox.Size = new System.Drawing.Size(123, 21);
@@ -178,7 +186,15 @@ namespace ParMath
             // 
             // CountOfParticipantsComboBox
             // 
+            this.CountOfParticipantsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CountOfParticipantsComboBox.FormattingEnabled = true;
+            this.CountOfParticipantsComboBox.Items.AddRange(new object[] {
+            "128",
+            "64",
+            "32",
+            "16",
+            "8",
+            "4"});
             this.CountOfParticipantsComboBox.Location = new System.Drawing.Point(204, 201);
             this.CountOfParticipantsComboBox.Name = "CountOfParticipantsComboBox";
             this.CountOfParticipantsComboBox.Size = new System.Drawing.Size(123, 21);
@@ -186,27 +202,30 @@ namespace ParMath
             // 
             // StateComboBox
             // 
+            this.StateComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.StateComboBox.FormattingEnabled = true;
+            this.StateComboBox.Items.AddRange(new object[] {
+            "InProgres",
+            "Registration",
+            "NotStarted",
+            "Finished"});
             this.StateComboBox.Location = new System.Drawing.Point(204, 247);
             this.StateComboBox.Name = "StateComboBox";
             this.StateComboBox.Size = new System.Drawing.Size(123, 21);
             this.StateComboBox.TabIndex = 15;
             // 
-            // ScenarioComboBox
+            // ScenaryComboBox
             // 
-            this.ScenarioComboBox.FormattingEnabled = true;
-            this.ScenarioComboBox.Location = new System.Drawing.Point(204, 296);
-            this.ScenarioComboBox.Name = "ScenarioComboBox";
-            this.ScenarioComboBox.Size = new System.Drawing.Size(123, 21);
-            this.ScenarioComboBox.TabIndex = 16;
-            // 
-            // DescriptionListBox
-            // 
-            this.DescriptionListBox.FormattingEnabled = true;
-            this.DescriptionListBox.Location = new System.Drawing.Point(376, 82);
-            this.DescriptionListBox.Name = "DescriptionListBox";
-            this.DescriptionListBox.Size = new System.Drawing.Size(186, 277);
-            this.DescriptionListBox.TabIndex = 17;
+            this.ScenaryComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ScenaryComboBox.FormattingEnabled = true;
+            this.ScenaryComboBox.Items.AddRange(new object[] {
+            "BestOfOne",
+            "BestOfThree",
+            "BestOfFive"});
+            this.ScenaryComboBox.Location = new System.Drawing.Point(204, 296);
+            this.ScenaryComboBox.Name = "ScenaryComboBox";
+            this.ScenaryComboBox.Size = new System.Drawing.Size(123, 21);
+            this.ScenaryComboBox.TabIndex = 16;
             // 
             // Create
             // 
@@ -217,15 +236,36 @@ namespace ParMath
             this.Create.TabIndex = 18;
             this.Create.Text = "Create";
             this.Create.UseVisualStyleBackColor = true;
+            this.Create.Click += new System.EventHandler(this.Create_Click);
+            // 
+            // DescriptionTextBox
+            // 
+            this.DescriptionTextBox.Location = new System.Drawing.Point(346, 65);
+            this.DescriptionTextBox.Multiline = true;
+            this.DescriptionTextBox.Name = "DescriptionTextBox";
+            this.DescriptionTextBox.Size = new System.Drawing.Size(247, 300);
+            this.DescriptionTextBox.TabIndex = 19;
+            // 
+            // ErrorMessage
+            // 
+            this.ErrorMessage.AutoSize = true;
+            this.ErrorMessage.BackColor = System.Drawing.Color.Red;
+            this.ErrorMessage.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ErrorMessage.Location = new System.Drawing.Point(38, 9);
+            this.ErrorMessage.Name = "ErrorMessage";
+            this.ErrorMessage.Size = new System.Drawing.Size(0, 13);
+            this.ErrorMessage.TabIndex = 20;
             // 
             // CreateTournamentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(605, 459);
+            this.Controls.Add(this.ErrorMessage);
+            this.Controls.Add(this.DescriptionTextBox);
             this.Controls.Add(this.Create);
-            this.Controls.Add(this.DescriptionListBox);
-            this.Controls.Add(this.ScenarioComboBox);
+            this.Controls.Add(this.ScenaryComboBox);
             this.Controls.Add(this.StateComboBox);
             this.Controls.Add(this.CountOfParticipantsComboBox);
             this.Controls.Add(this.LevelComboBox);
@@ -235,15 +275,17 @@ namespace ParMath
             this.Controls.Add(this.NameOfTournamentTextBox);
             this.Controls.Add(this.DescriptionLabel);
             this.Controls.Add(this.PlaceLabel);
-            this.Controls.Add(this.ScenarioLabel);
+            this.Controls.Add(this.ScenaryLabel);
             this.Controls.Add(this.StateLabel);
             this.Controls.Add(this.CountOfParticipantsLabel);
             this.Controls.Add(this.LevelButton);
             this.Controls.Add(this.LastRegistrationDateLabel);
             this.Controls.Add(this.StartDateLabel);
             this.Controls.Add(this.NameOfTournamentLabel);
+            this.MaximizeBox = false;
             this.Name = "CreateTournamentForm";
             this.Text = "CreateTournamentForm";
+            this.Load += new System.EventHandler(this.CreateTournamentForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,7 +299,7 @@ namespace ParMath
         private System.Windows.Forms.Label LevelButton;
         private System.Windows.Forms.Label CountOfParticipantsLabel;
         private System.Windows.Forms.Label StateLabel;
-        private System.Windows.Forms.Label ScenarioLabel;
+        private System.Windows.Forms.Label ScenaryLabel;
         private System.Windows.Forms.Label PlaceLabel;
         private System.Windows.Forms.Label DescriptionLabel;
         private System.Windows.Forms.TextBox NameOfTournamentTextBox;
@@ -267,8 +309,9 @@ namespace ParMath
         private System.Windows.Forms.ComboBox LevelComboBox;
         private System.Windows.Forms.ComboBox CountOfParticipantsComboBox;
         private System.Windows.Forms.ComboBox StateComboBox;
-        private System.Windows.Forms.ComboBox ScenarioComboBox;
-        private System.Windows.Forms.ListBox DescriptionListBox;
+        private System.Windows.Forms.ComboBox ScenaryComboBox;
         private System.Windows.Forms.Button Create;
+        private System.Windows.Forms.TextBox DescriptionTextBox;
+        private System.Windows.Forms.Label ErrorMessage;
     }
 }

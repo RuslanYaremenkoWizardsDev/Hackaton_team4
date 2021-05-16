@@ -1,41 +1,23 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj": {}
+    "C:\\Users\\nhevg\\Desktop\\Hackaton_team41\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj": {
+    "C:\\Users\\nhevg\\Desktop\\Hackaton_team41\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\nhevg\\Desktop\\Hackaton_team41\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
         "projectName": "ParMath.Tests",
-        "projectPath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
+        "projectPath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team41\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
         "packagesPath": "C:\\Users\\nhevg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath.Tests\\obj\\",
-=======
-    "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
-        "projectName": "ParMath.Tests",
-        "projectPath": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
-        "packagesPath": "C:\\Users\\Yana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\obj\\",
->>>>>>> Front_end
+        "outputPath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team41\\ParMath\\ParMath.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\nhevg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\Yana\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Front_end
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,13 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-<<<<<<< HEAD
-              "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
-                "projectPath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
-=======
-              "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
-                "projectPath": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
->>>>>>> Front_end
+              "C:\\Users\\nhevg\\Desktop\\Hackaton_team41\\ParMath\\ParMath\\ParMath.csproj": {
+                "projectPath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team41\\ParMath\\ParMath\\ParMath.csproj"
               }
             }
           }
@@ -99,27 +76,15 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
+    "C:\\Users\\nhevg\\Desktop\\Hackaton_team41\\ParMath\\ParMath\\ParMath.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj",
+        "projectUniqueName": "C:\\Users\\nhevg\\Desktop\\Hackaton_team41\\ParMath\\ParMath\\ParMath.csproj",
         "projectName": "ParMath",
-        "projectPath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj",
-        "projectName": "ParMath",
-        "projectPath": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
->>>>>>> Front_end
+        "projectPath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team41\\ParMath\\ParMath\\ParMath.csproj"
       },
       "frameworks": {
         "net472": {}

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ParMath
 {
-    public partial class TournamentForm : Form
+    public partial class TournametForm : Form
     {
-        public TournamentForm()
+        public TournametForm()
         {
             InitializeComponent();
         }

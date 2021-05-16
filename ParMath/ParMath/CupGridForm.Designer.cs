@@ -131,22 +131,20 @@ namespace ParMath
             this.Pairs1Panel.Controls.Add(this.Player1Panel);
             this.Pairs1Panel.Location = new System.Drawing.Point(12, 12);
             this.Pairs1Panel.Name = "Pairs1Panel";
-            this.Pairs1Panel.Size = new System.Drawing.Size(551, 200);
+            this.Pairs1Panel.Size = new System.Drawing.Size(513, 200);
             this.Pairs1Panel.TabIndex = 0;
             // 
             // Player2Panel
             // 
-            this.Player2Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player2Panel.Controls.Add(this.Player2TextBox2);
             this.Player2Panel.Controls.Add(this.Player2TextBox1);
             this.Player2Panel.Location = new System.Drawing.Point(8, 99);
             this.Player2Panel.Name = "Player2Panel";
-            this.Player2Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player2Panel.Size = new System.Drawing.Size(497, 90);
             this.Player2Panel.TabIndex = 1;
             // 
             // Player2TextBox2
             // 
-            this.Player2TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player2TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player2TextBox2.Location = new System.Drawing.Point(410, 17);
             this.Player2TextBox2.Name = "Player2TextBox2";
@@ -163,17 +161,15 @@ namespace ParMath
             // 
             // Player1Panel
             // 
-            this.Player1Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player1Panel.Controls.Add(this.Player1TextBox2);
             this.Player1Panel.Controls.Add(this.Player1TextBox1);
             this.Player1Panel.Location = new System.Drawing.Point(8, 3);
             this.Player1Panel.Name = "Player1Panel";
-            this.Player1Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player1Panel.Size = new System.Drawing.Size(497, 90);
             this.Player1Panel.TabIndex = 0;
             // 
             // Player1TextBox2
             // 
-            this.Player1TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player1TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player1TextBox2.Location = new System.Drawing.Point(409, 13);
             this.Player1TextBox2.Name = "Player1TextBox2";
@@ -194,22 +190,20 @@ namespace ParMath
             this.Pairs2Panel.Controls.Add(this.Player3Panel);
             this.Pairs2Panel.Location = new System.Drawing.Point(12, 271);
             this.Pairs2Panel.Name = "Pairs2Panel";
-            this.Pairs2Panel.Size = new System.Drawing.Size(551, 200);
+            this.Pairs2Panel.Size = new System.Drawing.Size(513, 200);
             this.Pairs2Panel.TabIndex = 1;
             // 
             // Player4Panel
             // 
-            this.Player4Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player4Panel.Controls.Add(this.Player4TextBox2);
             this.Player4Panel.Controls.Add(this.Player4TextBox1);
             this.Player4Panel.Location = new System.Drawing.Point(8, 99);
             this.Player4Panel.Name = "Player4Panel";
-            this.Player4Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player4Panel.Size = new System.Drawing.Size(497, 90);
             this.Player4Panel.TabIndex = 1;
             // 
             // Player4TextBox2
             // 
-            this.Player4TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player4TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player4TextBox2.Location = new System.Drawing.Point(410, 17);
             this.Player4TextBox2.Name = "Player4TextBox2";
@@ -226,17 +220,15 @@ namespace ParMath
             // 
             // Player3Panel
             // 
-            this.Player3Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player3Panel.Controls.Add(this.Player3TextBox2);
             this.Player3Panel.Controls.Add(this.Player3TextBox1);
             this.Player3Panel.Location = new System.Drawing.Point(8, 3);
             this.Player3Panel.Name = "Player3Panel";
-            this.Player3Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player3Panel.Size = new System.Drawing.Size(497, 90);
             this.Player3Panel.TabIndex = 0;
             // 
             // Player3TextBox2
             // 
-            this.Player3TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player3TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player3TextBox2.Location = new System.Drawing.Point(409, 13);
             this.Player3TextBox2.Name = "Player3TextBox2";
@@ -257,22 +249,20 @@ namespace ParMath
             this.Pairs3Panel.Controls.Add(this.Player5Panel);
             this.Pairs3Panel.Location = new System.Drawing.Point(12, 528);
             this.Pairs3Panel.Name = "Pairs3Panel";
-            this.Pairs3Panel.Size = new System.Drawing.Size(551, 200);
+            this.Pairs3Panel.Size = new System.Drawing.Size(513, 200);
             this.Pairs3Panel.TabIndex = 2;
             // 
             // Player6Panel
             // 
-            this.Player6Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player6Panel.Controls.Add(this.Player6TextBox2);
             this.Player6Panel.Controls.Add(this.Player6TextBox1);
             this.Player6Panel.Location = new System.Drawing.Point(8, 99);
             this.Player6Panel.Name = "Player6Panel";
-            this.Player6Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player6Panel.Size = new System.Drawing.Size(497, 90);
             this.Player6Panel.TabIndex = 1;
             // 
             // Player6TextBox2
             // 
-            this.Player6TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player6TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player6TextBox2.Location = new System.Drawing.Point(410, 17);
             this.Player6TextBox2.Name = "Player6TextBox2";
@@ -289,17 +279,15 @@ namespace ParMath
             // 
             // Player5Panel
             // 
-            this.Player5Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player5Panel.Controls.Add(this.Player5TextBox2);
             this.Player5Panel.Controls.Add(this.Player5TextBox1);
             this.Player5Panel.Location = new System.Drawing.Point(8, 3);
             this.Player5Panel.Name = "Player5Panel";
-            this.Player5Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player5Panel.Size = new System.Drawing.Size(497, 90);
             this.Player5Panel.TabIndex = 0;
             // 
             // Player5TextBox2
             // 
-            this.Player5TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player5TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player5TextBox2.Location = new System.Drawing.Point(409, 13);
             this.Player5TextBox2.Name = "Player5TextBox2";
@@ -320,22 +308,20 @@ namespace ParMath
             this.Pairs4Panel.Controls.Add(this.Player7Panel);
             this.Pairs4Panel.Location = new System.Drawing.Point(12, 786);
             this.Pairs4Panel.Name = "Pairs4Panel";
-            this.Pairs4Panel.Size = new System.Drawing.Size(551, 200);
+            this.Pairs4Panel.Size = new System.Drawing.Size(513, 200);
             this.Pairs4Panel.TabIndex = 3;
             // 
             // Player8Panel
             // 
-            this.Player8Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player8Panel.Controls.Add(this.Player8TextBox2);
             this.Player8Panel.Controls.Add(this.Player8TextBox1);
             this.Player8Panel.Location = new System.Drawing.Point(8, 99);
             this.Player8Panel.Name = "Player8Panel";
-            this.Player8Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player8Panel.Size = new System.Drawing.Size(497, 90);
             this.Player8Panel.TabIndex = 1;
             // 
             // Player8TextBox2
             // 
-            this.Player8TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player8TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player8TextBox2.Location = new System.Drawing.Point(410, 17);
             this.Player8TextBox2.Name = "Player8TextBox2";
@@ -352,17 +338,15 @@ namespace ParMath
             // 
             // Player7Panel
             // 
-            this.Player7Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player7Panel.Controls.Add(this.Player7TextBox2);
             this.Player7Panel.Controls.Add(this.Player7TextBox1);
             this.Player7Panel.Location = new System.Drawing.Point(8, 3);
             this.Player7Panel.Name = "Player7Panel";
-            this.Player7Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player7Panel.Size = new System.Drawing.Size(497, 90);
             this.Player7Panel.TabIndex = 0;
             // 
             // Player7TextBox2
             // 
-            this.Player7TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player7TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player7TextBox2.Location = new System.Drawing.Point(409, 13);
             this.Player7TextBox2.Name = "Player7TextBox2";
@@ -383,22 +367,20 @@ namespace ParMath
             this.Pairs5Panel.Controls.Add(this.Player9Panel);
             this.Pairs5Panel.Location = new System.Drawing.Point(12, 1049);
             this.Pairs5Panel.Name = "Pairs5Panel";
-            this.Pairs5Panel.Size = new System.Drawing.Size(551, 200);
+            this.Pairs5Panel.Size = new System.Drawing.Size(513, 200);
             this.Pairs5Panel.TabIndex = 4;
             // 
             // Player10Panel
             // 
-            this.Player10Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player10Panel.Controls.Add(this.Player10TextBox2);
             this.Player10Panel.Controls.Add(this.Player10TextBox1);
             this.Player10Panel.Location = new System.Drawing.Point(8, 99);
             this.Player10Panel.Name = "Player10Panel";
-            this.Player10Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player10Panel.Size = new System.Drawing.Size(497, 90);
             this.Player10Panel.TabIndex = 1;
             // 
             // Player10TextBox2
             // 
-            this.Player10TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player10TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player10TextBox2.Location = new System.Drawing.Point(410, 17);
             this.Player10TextBox2.Name = "Player10TextBox2";
@@ -415,17 +397,15 @@ namespace ParMath
             // 
             // Player9Panel
             // 
-            this.Player9Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player9Panel.Controls.Add(this.Player9TextBox2);
             this.Player9Panel.Controls.Add(this.Player9TextBox1);
             this.Player9Panel.Location = new System.Drawing.Point(8, 3);
             this.Player9Panel.Name = "Player9Panel";
-            this.Player9Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player9Panel.Size = new System.Drawing.Size(497, 90);
             this.Player9Panel.TabIndex = 0;
             // 
             // Player9TextBox2
             // 
-            this.Player9TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player9TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player9TextBox2.Location = new System.Drawing.Point(409, 13);
             this.Player9TextBox2.Name = "Player9TextBox2";
@@ -446,22 +426,20 @@ namespace ParMath
             this.Pairs6Panel.Controls.Add(this.Player11Panel);
             this.Pairs6Panel.Location = new System.Drawing.Point(622, 138);
             this.Pairs6Panel.Name = "Pairs6Panel";
-            this.Pairs6Panel.Size = new System.Drawing.Size(551, 200);
+            this.Pairs6Panel.Size = new System.Drawing.Size(514, 200);
             this.Pairs6Panel.TabIndex = 5;
             // 
             // Player12Panel
             // 
-            this.Player12Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player12Panel.Controls.Add(this.Player12TextBox2);
             this.Player12Panel.Controls.Add(this.Player12TextBox1);
             this.Player12Panel.Location = new System.Drawing.Point(8, 99);
             this.Player12Panel.Name = "Player12Panel";
-            this.Player12Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player12Panel.Size = new System.Drawing.Size(498, 90);
             this.Player12Panel.TabIndex = 1;
             // 
             // Player12TextBox2
             // 
-            this.Player12TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player12TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player12TextBox2.Location = new System.Drawing.Point(410, 17);
             this.Player12TextBox2.Name = "Player12TextBox2";
@@ -478,17 +456,15 @@ namespace ParMath
             // 
             // Player11Panel
             // 
-            this.Player11Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player11Panel.Controls.Add(this.Player11TextBox2);
             this.Player11Panel.Controls.Add(this.Player11TextBox1);
             this.Player11Panel.Location = new System.Drawing.Point(8, 3);
             this.Player11Panel.Name = "Player11Panel";
-            this.Player11Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player11Panel.Size = new System.Drawing.Size(498, 90);
             this.Player11Panel.TabIndex = 0;
             // 
             // Player11TextBox2
             // 
-            this.Player11TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player11TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player11TextBox2.Location = new System.Drawing.Point(409, 13);
             this.Player11TextBox2.Name = "Player11TextBox2";
@@ -509,22 +485,20 @@ namespace ParMath
             this.Pairs7Panel.Controls.Add(this.Player13Panel);
             this.Pairs7Panel.Location = new System.Drawing.Point(622, 653);
             this.Pairs7Panel.Name = "Pairs7Panel";
-            this.Pairs7Panel.Size = new System.Drawing.Size(551, 200);
+            this.Pairs7Panel.Size = new System.Drawing.Size(514, 200);
             this.Pairs7Panel.TabIndex = 6;
             // 
             // Player14Panel
             // 
-            this.Player14Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player14Panel.Controls.Add(this.Player14TextBox2);
             this.Player14Panel.Controls.Add(this.Player14TextBox1);
             this.Player14Panel.Location = new System.Drawing.Point(8, 99);
             this.Player14Panel.Name = "Player14Panel";
-            this.Player14Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player14Panel.Size = new System.Drawing.Size(498, 90);
             this.Player14Panel.TabIndex = 1;
             // 
             // Player14TextBox2
             // 
-            this.Player14TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player14TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player14TextBox2.Location = new System.Drawing.Point(410, 17);
             this.Player14TextBox2.Name = "Player14TextBox2";
@@ -541,17 +515,15 @@ namespace ParMath
             // 
             // Player13Panel
             // 
-            this.Player13Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player13Panel.Controls.Add(this.Player13TextBox2);
             this.Player13Panel.Controls.Add(this.Player13TextBox1);
             this.Player13Panel.Location = new System.Drawing.Point(8, 3);
             this.Player13Panel.Name = "Player13Panel";
-            this.Player13Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player13Panel.Size = new System.Drawing.Size(498, 90);
             this.Player13Panel.TabIndex = 0;
             // 
             // Player13TextBox2
             // 
-            this.Player13TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player13TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player13TextBox2.Location = new System.Drawing.Point(409, 13);
             this.Player13TextBox2.Name = "Player13TextBox2";
@@ -572,22 +544,20 @@ namespace ParMath
             this.Pairs8Panel.Controls.Add(this.Player15Panel);
             this.Pairs8Panel.Location = new System.Drawing.Point(1230, 853);
             this.Pairs8Panel.Name = "Pairs8Panel";
-            this.Pairs8Panel.Size = new System.Drawing.Size(551, 200);
+            this.Pairs8Panel.Size = new System.Drawing.Size(516, 200);
             this.Pairs8Panel.TabIndex = 7;
             // 
             // Player16Panel
             // 
-            this.Player16Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player16Panel.Controls.Add(this.Player16TextBox2);
             this.Player16Panel.Controls.Add(this.Player16TextBox1);
             this.Player16Panel.Location = new System.Drawing.Point(8, 99);
             this.Player16Panel.Name = "Player16Panel";
-            this.Player16Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player16Panel.Size = new System.Drawing.Size(498, 90);
             this.Player16Panel.TabIndex = 1;
             // 
             // Player16TextBox2
             // 
-            this.Player16TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player16TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player16TextBox2.Location = new System.Drawing.Point(410, 17);
             this.Player16TextBox2.Name = "Player16TextBox2";
@@ -604,17 +574,15 @@ namespace ParMath
             // 
             // Player15Panel
             // 
-            this.Player15Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player15Panel.Controls.Add(this.Player15TextBox2);
             this.Player15Panel.Controls.Add(this.Player15TextBox1);
             this.Player15Panel.Location = new System.Drawing.Point(8, 3);
             this.Player15Panel.Name = "Player15Panel";
-            this.Player15Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player15Panel.Size = new System.Drawing.Size(498, 90);
             this.Player15Panel.TabIndex = 0;
             // 
             // Player15TextBox2
             // 
-            this.Player15TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player15TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player15TextBox2.Location = new System.Drawing.Point(409, 13);
             this.Player15TextBox2.Name = "Player15TextBox2";
@@ -635,22 +603,20 @@ namespace ParMath
             this.Pairs9Panel.Controls.Add(this.Player17Panel);
             this.Pairs9Panel.Location = new System.Drawing.Point(1857, 472);
             this.Pairs9Panel.Name = "Pairs9Panel";
-            this.Pairs9Panel.Size = new System.Drawing.Size(551, 200);
+            this.Pairs9Panel.Size = new System.Drawing.Size(511, 200);
             this.Pairs9Panel.TabIndex = 8;
             // 
             // Player18Panel
             // 
-            this.Player18Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player18Panel.Controls.Add(this.Player18TextBox2);
             this.Player18Panel.Controls.Add(this.Player18TextBox1);
             this.Player18Panel.Location = new System.Drawing.Point(8, 99);
             this.Player18Panel.Name = "Player18Panel";
-            this.Player18Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player18Panel.Size = new System.Drawing.Size(496, 90);
             this.Player18Panel.TabIndex = 1;
             // 
             // Player18TextBox2
             // 
-            this.Player18TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player18TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player18TextBox2.Location = new System.Drawing.Point(410, 17);
             this.Player18TextBox2.Name = "Player18TextBox2";
@@ -667,17 +633,15 @@ namespace ParMath
             // 
             // Player17Panel
             // 
-            this.Player17Panel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Player17Panel.Controls.Add(this.Player17TextBox2);
             this.Player17Panel.Controls.Add(this.Player17TextBox1);
             this.Player17Panel.Location = new System.Drawing.Point(8, 3);
             this.Player17Panel.Name = "Player17Panel";
-            this.Player17Panel.Size = new System.Drawing.Size(535, 90);
+            this.Player17Panel.Size = new System.Drawing.Size(496, 90);
             this.Player17Panel.TabIndex = 0;
             // 
             // Player17TextBox2
             // 
-            this.Player17TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Player17TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Player17TextBox2.Location = new System.Drawing.Point(409, 13);
             this.Player17TextBox2.Name = "Player17TextBox2";
@@ -698,12 +662,11 @@ namespace ParMath
             this.WinnerPanel.Controls.Add(this.WinnerTextBox1);
             this.WinnerPanel.Location = new System.Drawing.Point(2468, 521);
             this.WinnerPanel.Name = "WinnerPanel";
-            this.WinnerPanel.Size = new System.Drawing.Size(535, 90);
+            this.WinnerPanel.Size = new System.Drawing.Size(495, 90);
             this.WinnerPanel.TabIndex = 9;
             // 
             // WinnerTextBox2
             // 
-            this.WinnerTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.WinnerTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.WinnerTextBox2.Location = new System.Drawing.Point(409, 13);
             this.WinnerTextBox2.Name = "WinnerTextBox2";
@@ -739,6 +702,7 @@ namespace ParMath
             this.Text = "Cup grid";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.CupGridForm_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.CupGridForm_Paint);
             this.Pairs1Panel.ResumeLayout(false);
             this.Player2Panel.ResumeLayout(false);
             this.Player2Panel.PerformLayout();

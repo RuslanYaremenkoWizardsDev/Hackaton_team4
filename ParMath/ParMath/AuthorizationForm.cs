@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace ParMath
 {
-    public partial class Form1 : Form
+    public partial class AuthorizationForm : Form
     {
-        public Form1()
+        public AuthorizationForm()
         {
             InitializeComponent();
+        }
+
+        private void RegistrationButton_Click(object sender, EventArgs e)
+        {
+            ConfirmPasswordLabel.Visible = true;
+            ConfirmPasswordTextBox.Visible = true;
         }
     }
 }

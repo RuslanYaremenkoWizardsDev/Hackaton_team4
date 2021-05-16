@@ -4638,23 +4638,41 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\nhevg\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+=======
+    "C:\\Users\\Yana\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+>>>>>>> Front_end
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
       "projectName": "ParMath.Tests",
       "projectPath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
       "packagesPath": "C:\\Users\\nhevg\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath.Tests\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
+      "projectName": "ParMath.Tests",
+      "projectPath": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
+      "packagesPath": "C:\\Users\\Yana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\obj\\",
+>>>>>>> Front_end
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\nhevg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\Yana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Front_end
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4669,8 +4687,13 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
               "projectPath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
+=======
+            "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
+              "projectPath": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
+>>>>>>> Front_end
             }
           }
         }
@@ -4713,7 +4736,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+>>>>>>> Front_end
       }
     }
   }

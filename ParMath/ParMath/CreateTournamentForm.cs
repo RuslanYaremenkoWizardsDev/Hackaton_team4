@@ -61,8 +61,7 @@ namespace ParMath
             _tournament.State = (MyEnum.State)StateComboBox.SelectedIndex;
             _tournament.Scenary = (MyEnum.Scenari)ScenaryComboBox.SelectedIndex;
             _tournament.Partiseted = (int)CountOfParticipantsComboBox.SelectedIndex;
+            _currentEngine.CurrentUser.CurrentTournament.Add(_tournament);
         }
-
-
     }
 }

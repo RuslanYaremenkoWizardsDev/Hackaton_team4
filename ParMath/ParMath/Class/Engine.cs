@@ -1,30 +1,77 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace ParMath.Class
 {
     public class Engine
     {
-        public Dictionary<string, string> AllUser = new Dictionary<string, string>();
+        private static Engine _engine;
+        public List<User> Users;
 
-        public void AddToDictionary(User currentUser)
+        private Engine()
         {
-            AllUser.Add(currentUser.Username, currentUser.Password);
+            Users = new List<User>();
         }
 
-        public void FindInDictionary(string username, string password)
+        public bool FindUser(string username, string password)
         {
-            foreach (KeyValuePair<string, string> entry in AllUser)
+            bool isExist = false;
+            foreach (User user in Users)
             {
-                if (username == entry.Key)
+                if (user.Username == username)
                 {
-                    if (password == entry.Value)
+                    if (user.Password == password)
                     {
-                        break;
+                        isExist = true;
+                    } else
+                    {
+                        isExist = false;
                     }
-                    throw new ArgumentException("Error: Password not find");
                 }
-                throw new AggregateException("Error: UserName not find");
+            }
+            return isExist;
+        }
+        public static Engine GetEngine()
+        {
+           if(_engine is null)
+            {
+                _engine = new Engine();
+            }
+            return _engine;
+        }
+        public void Seeds(int quantityUsers)
+        {
+            string defaultUsername = "Shaitan";
+            string defaultPassword = "Password";
+            for ( int i = 0; i  < quantityUsers; i++)
+            {
+                defaultUsername += i;
+                defaultPassword += i;
+                User user = User.CreateUser(defaultUsername, defaultPassword);
+                Users.Add(user);
+            }
+        }
+        public bool UniquelyUser(string username)
+        {
+            bool uniquely = true;
+            foreach ( User user in Users)
+            {
+                if ( user.Username == username)
+                {
+                    uniquely = false;
+                    break;
+                }
+            }
+            return uniquely;
+        }
+        
+        public void SaveAllUsers()
+        {
+            using (StreamWriter sw = new StreamWriter("Users.txt"))
+            {
+                sw.Write(JsonConvert.SerializeObject(Users));
             }
         }
     }

@@ -2,3 +2,8 @@ C:\Users\finau\RiderProjects\Hackaton_team4\ParMath\ParMath\obj\Debug\ParMath.cs
 C:\Users\finau\RiderProjects\Hackaton_team4\ParMath\ParMath\obj\Debug\ParMath.Properties.Resources.resources
 C:\Users\finau\RiderProjects\Hackaton_team4\ParMath\ParMath\obj\Debug\ParMath.csproj.GenerateResource.cache
 C:\Users\finau\RiderProjects\Hackaton_team4\ParMath\ParMath\obj\Debug\ParMath.csproj.CoreCompileInputs.cache
+C:\Users\finau\RiderProjects\Hackaton_team4\ParMath\ParMath\bin\Debug\ParMath.exe.config
+C:\Users\finau\RiderProjects\Hackaton_team4\ParMath\ParMath\bin\Debug\ParMath.exe
+C:\Users\finau\RiderProjects\Hackaton_team4\ParMath\ParMath\bin\Debug\ParMath.pdb
+C:\Users\finau\RiderProjects\Hackaton_team4\ParMath\ParMath\obj\Debug\ParMath.exe
+C:\Users\finau\RiderProjects\Hackaton_team4\ParMath\ParMath\obj\Debug\ParMath.pdb

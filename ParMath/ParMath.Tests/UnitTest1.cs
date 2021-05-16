@@ -8,11 +8,12 @@ namespace ParMath.Tests
     {
         private Engine _engine;
         private User _firstUser;
+
         [SetUp]
         public void Setup()
         {
             _engine = new Engine();
-            _firstUser = new User("Shaitan", "111111");
+            _firstUser = User.CreateUser("Shaitan", "111111");
         }
 
         [Test]

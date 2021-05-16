@@ -6,26 +6,27 @@ namespace ParMath.Class
     public class Engine
     {
         public Dictionary<string, string> AllUser = new Dictionary<string, string>();
+        public List<User> Users = new List<User>();
 
         public void AddToDictionary(User currentUser)
         {
             AllUser.Add(currentUser.Username, currentUser.Password);
         }
 
-        public void FindInDictionary(string username, string password)
+        public bool FindInDictionary(string username, string password)
         {
+            bool isExist = false;
             foreach (KeyValuePair<string, string> entry in AllUser)
             {
                 if (username == entry.Key)
                 {
                     if (password == entry.Value)
                     {
-                        break;
+                        isExist = true;
                     }
-                    throw new ArgumentException("Error: Password not find");
                 }
-                throw new AggregateException("Error: UserName not find");
             }
+            return isExist;
         }
     }
 }

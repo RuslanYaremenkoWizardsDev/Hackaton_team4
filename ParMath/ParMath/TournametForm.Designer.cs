@@ -252,9 +252,9 @@ namespace ParMath
             // 
             this.ActionsRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ActionsRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ActionsRichTextBox.Location = new System.Drawing.Point(1995, 3);
+            this.ActionsRichTextBox.Location = new System.Drawing.Point(2003, 3);
             this.ActionsRichTextBox.Name = "ActionsRichTextBox";
-            this.ActionsRichTextBox.Size = new System.Drawing.Size(215, 129);
+            this.ActionsRichTextBox.Size = new System.Drawing.Size(198, 129);
             this.ActionsRichTextBox.TabIndex = 9;
             this.ActionsRichTextBox.Text = "Actions";
             // 

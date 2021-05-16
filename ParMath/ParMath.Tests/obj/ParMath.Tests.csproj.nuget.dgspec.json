@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj": {}
+    "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj": {
+    "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
         "projectName": "ParMath.Tests",
-        "projectPath": "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
-        "packagesPath": "C:\\Users\\finau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath.Tests\\obj\\",
+        "projectPath": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
+        "packagesPath": "C:\\Users\\Yana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\finau\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Yana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -28,8 +34,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
-                "projectPath": "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
+              "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
+                "projectPath": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
               }
             }
           }
@@ -72,15 +78,15 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
+    "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj",
+        "projectUniqueName": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj",
         "projectName": "ParMath",
-        "projectPath": "C:\\Users\\finau\\RiderProjects\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
+        "projectPath": "C:\\Users\\Yana\\Source\\Repos\\Hackaton_team4\\ParMath\\ParMath\\ParMath.csproj"
       },
       "frameworks": {
         "net472": {}

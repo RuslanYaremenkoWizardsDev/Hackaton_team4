@@ -37,6 +37,8 @@ namespace ParMath
             this.ConfirmPasswordTextBox = new System.Windows.Forms.TextBox();
             this.RegistrationButton = new System.Windows.Forms.Button();
             this.SignInButton = new System.Windows.Forms.Button();
+            this.ConfirmRegistrationButton = new System.Windows.Forms.Button();
+            this.ErrorMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LoginLabel
@@ -110,12 +112,38 @@ namespace ParMath
             this.SignInButton.TabIndex = 7;
             this.SignInButton.Text = "Sign In";
             this.SignInButton.UseVisualStyleBackColor = true;
+            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
+            // 
+            // ConfirmRegistrationButton
+            // 
+            this.ConfirmRegistrationButton.Location = new System.Drawing.Point(123, 284);
+            this.ConfirmRegistrationButton.Name = "ConfirmRegistrationButton";
+            this.ConfirmRegistrationButton.Size = new System.Drawing.Size(90, 23);
+            this.ConfirmRegistrationButton.TabIndex = 8;
+            this.ConfirmRegistrationButton.Text = "Ok";
+            this.ConfirmRegistrationButton.UseVisualStyleBackColor = true;
+            this.ConfirmRegistrationButton.Visible = false;
+            this.ConfirmRegistrationButton.Click += new System.EventHandler(this.ConfirmRegistrationButton_Click);
+            // 
+            // ErrorMessage
+            // 
+            this.ErrorMessage.AutoSize = true;
+            this.ErrorMessage.BackColor = System.Drawing.Color.Red;
+            this.ErrorMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.ErrorMessage.Location = new System.Drawing.Point(47, 31);
+            this.ErrorMessage.Name = "ErrorMessage";
+            this.ErrorMessage.Size = new System.Drawing.Size(283, 24);
+            this.ErrorMessage.TabIndex = 9;
+            this.ErrorMessage.Text = "Username most be range: 3..255";
+            this.ErrorMessage.Visible = false;
             // 
             // AuthorizationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 417);
+            this.Controls.Add(this.ErrorMessage);
+            this.Controls.Add(this.ConfirmRegistrationButton);
             this.Controls.Add(this.SignInButton);
             this.Controls.Add(this.RegistrationButton);
             this.Controls.Add(this.ConfirmPasswordTextBox);
@@ -126,6 +154,7 @@ namespace ParMath
             this.Controls.Add(this.LoginLabel);
             this.Name = "AuthorizationForm";
             this.Text = "Authorization";
+            this.Load += new System.EventHandler(this.AuthorizationForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,6 +170,8 @@ namespace ParMath
         private System.Windows.Forms.TextBox ConfirmPasswordTextBox;
         private System.Windows.Forms.Button RegistrationButton;
         private System.Windows.Forms.Button SignInButton;
+        private System.Windows.Forms.Button ConfirmRegistrationButton;
+        private System.Windows.Forms.Label ErrorMessage;
     }
 }
 

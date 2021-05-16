@@ -155,7 +155,7 @@ namespace ParMath
             this.TournamentsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.TournamentsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.TournamentsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.TournamentsTableLayoutPanel.Size = new System.Drawing.Size(2188, 218);
+            this.TournamentsTableLayoutPanel.Size = new System.Drawing.Size(2216, 406);
             this.TournamentsTableLayoutPanel.TabIndex = 4;
             // 
             // NameTournamentsRichTextBox
@@ -164,7 +164,7 @@ namespace ParMath
             this.NameTournamentsRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NameTournamentsRichTextBox.Location = new System.Drawing.Point(3, 3);
             this.NameTournamentsRichTextBox.Name = "NameTournamentsRichTextBox";
-            this.NameTournamentsRichTextBox.Size = new System.Drawing.Size(212, 66);
+            this.NameTournamentsRichTextBox.Size = new System.Drawing.Size(215, 129);
             this.NameTournamentsRichTextBox.TabIndex = 0;
             this.NameTournamentsRichTextBox.Text = "Name";
             // 
@@ -172,9 +172,9 @@ namespace ParMath
             // 
             this.ModeRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ModeRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ModeRichTextBox.Location = new System.Drawing.Point(221, 3);
+            this.ModeRichTextBox.Location = new System.Drawing.Point(224, 3);
             this.ModeRichTextBox.Name = "ModeRichTextBox";
-            this.ModeRichTextBox.Size = new System.Drawing.Size(212, 66);
+            this.ModeRichTextBox.Size = new System.Drawing.Size(215, 129);
             this.ModeRichTextBox.TabIndex = 1;
             this.ModeRichTextBox.Text = "Mode";
             // 
@@ -182,9 +182,9 @@ namespace ParMath
             // 
             this.PlaceRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PlaceRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PlaceRichTextBox.Location = new System.Drawing.Point(439, 3);
+            this.PlaceRichTextBox.Location = new System.Drawing.Point(445, 3);
             this.PlaceRichTextBox.Name = "PlaceRichTextBox";
-            this.PlaceRichTextBox.Size = new System.Drawing.Size(212, 66);
+            this.PlaceRichTextBox.Size = new System.Drawing.Size(215, 129);
             this.PlaceRichTextBox.TabIndex = 2;
             this.PlaceRichTextBox.Text = "Place";
             // 
@@ -192,9 +192,9 @@ namespace ParMath
             // 
             this.StartDateRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.StartDateRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.StartDateRichTextBox.Location = new System.Drawing.Point(657, 3);
+            this.StartDateRichTextBox.Location = new System.Drawing.Point(666, 3);
             this.StartDateRichTextBox.Name = "StartDateRichTextBox";
-            this.StartDateRichTextBox.Size = new System.Drawing.Size(212, 66);
+            this.StartDateRichTextBox.Size = new System.Drawing.Size(215, 129);
             this.StartDateRichTextBox.TabIndex = 3;
             this.StartDateRichTextBox.Text = "Start date";
             // 
@@ -202,9 +202,9 @@ namespace ParMath
             // 
             this.LastRegDateRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LastRegDateRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LastRegDateRichTextBox.Location = new System.Drawing.Point(875, 3);
+            this.LastRegDateRichTextBox.Location = new System.Drawing.Point(887, 3);
             this.LastRegDateRichTextBox.Name = "LastRegDateRichTextBox";
-            this.LastRegDateRichTextBox.Size = new System.Drawing.Size(212, 66);
+            this.LastRegDateRichTextBox.Size = new System.Drawing.Size(215, 129);
             this.LastRegDateRichTextBox.TabIndex = 4;
             this.LastRegDateRichTextBox.Text = "Last reg date";
             // 
@@ -212,9 +212,9 @@ namespace ParMath
             // 
             this.StateRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.StateRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.StateRichTextBox.Location = new System.Drawing.Point(1093, 3);
+            this.StateRichTextBox.Location = new System.Drawing.Point(1108, 3);
             this.StateRichTextBox.Name = "StateRichTextBox";
-            this.StateRichTextBox.Size = new System.Drawing.Size(212, 66);
+            this.StateRichTextBox.Size = new System.Drawing.Size(215, 129);
             this.StateRichTextBox.TabIndex = 5;
             this.StateRichTextBox.Text = "State";
             // 
@@ -222,9 +222,9 @@ namespace ParMath
             // 
             this.LevelRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LevelRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LevelRichTextBox.Location = new System.Drawing.Point(1311, 3);
+            this.LevelRichTextBox.Location = new System.Drawing.Point(1329, 3);
             this.LevelRichTextBox.Name = "LevelRichTextBox";
-            this.LevelRichTextBox.Size = new System.Drawing.Size(212, 66);
+            this.LevelRichTextBox.Size = new System.Drawing.Size(215, 129);
             this.LevelRichTextBox.TabIndex = 6;
             this.LevelRichTextBox.Text = "Level";
             // 
@@ -232,9 +232,9 @@ namespace ParMath
             // 
             this.ParticipantsRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ParticipantsRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ParticipantsRichTextBox.Location = new System.Drawing.Point(1529, 3);
+            this.ParticipantsRichTextBox.Location = new System.Drawing.Point(1550, 3);
             this.ParticipantsRichTextBox.Name = "ParticipantsRichTextBox";
-            this.ParticipantsRichTextBox.Size = new System.Drawing.Size(212, 66);
+            this.ParticipantsRichTextBox.Size = new System.Drawing.Size(215, 129);
             this.ParticipantsRichTextBox.TabIndex = 7;
             this.ParticipantsRichTextBox.Text = "Participants";
             // 
@@ -242,9 +242,9 @@ namespace ParMath
             // 
             this.ScenarioRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ScenarioRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ScenarioRichTextBox.Location = new System.Drawing.Point(1747, 3);
+            this.ScenarioRichTextBox.Location = new System.Drawing.Point(1771, 3);
             this.ScenarioRichTextBox.Name = "ScenarioRichTextBox";
-            this.ScenarioRichTextBox.Size = new System.Drawing.Size(212, 66);
+            this.ScenarioRichTextBox.Size = new System.Drawing.Size(215, 129);
             this.ScenarioRichTextBox.TabIndex = 8;
             this.ScenarioRichTextBox.Text = "Scenario";
             // 
@@ -252,9 +252,9 @@ namespace ParMath
             // 
             this.ActionsRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ActionsRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ActionsRichTextBox.Location = new System.Drawing.Point(1965, 3);
+            this.ActionsRichTextBox.Location = new System.Drawing.Point(1995, 3);
             this.ActionsRichTextBox.Name = "ActionsRichTextBox";
-            this.ActionsRichTextBox.Size = new System.Drawing.Size(220, 66);
+            this.ActionsRichTextBox.Size = new System.Drawing.Size(215, 129);
             this.ActionsRichTextBox.TabIndex = 9;
             this.ActionsRichTextBox.Text = "Actions";
             // 
@@ -490,7 +490,7 @@ namespace ParMath
             // 
             this.SearchByStateLabel.AutoSize = true;
             this.SearchByStateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SearchByStateLabel.Location = new System.Drawing.Point(1554, 39);
+            this.SearchByStateLabel.Location = new System.Drawing.Point(1537, 39);
             this.SearchByStateLabel.Name = "SearchByStateLabel";
             this.SearchByStateLabel.Size = new System.Drawing.Size(252, 39);
             this.SearchByStateLabel.TabIndex = 7;
@@ -498,38 +498,38 @@ namespace ParMath
             // 
             // FromStartDateTimePicker
             // 
-            this.FromStartDateTimePicker.Location = new System.Drawing.Point(30, 103);
+            this.FromStartDateTimePicker.Location = new System.Drawing.Point(18, 103);
             this.FromStartDateTimePicker.Name = "FromStartDateTimePicker";
-            this.FromStartDateTimePicker.Size = new System.Drawing.Size(200, 38);
+            this.FromStartDateTimePicker.Size = new System.Drawing.Size(570, 38);
             this.FromStartDateTimePicker.TabIndex = 8;
             // 
             // ToStartDateTimePicker
             // 
-            this.ToStartDateTimePicker.Location = new System.Drawing.Point(248, 103);
+            this.ToStartDateTimePicker.Location = new System.Drawing.Point(18, 147);
             this.ToStartDateTimePicker.Name = "ToStartDateTimePicker";
-            this.ToStartDateTimePicker.Size = new System.Drawing.Size(200, 38);
+            this.ToStartDateTimePicker.Size = new System.Drawing.Size(570, 38);
             this.ToStartDateTimePicker.TabIndex = 9;
             // 
             // FromRegDateTimePicker
             // 
             this.FromRegDateTimePicker.Location = new System.Drawing.Point(784, 103);
             this.FromRegDateTimePicker.Name = "FromRegDateTimePicker";
-            this.FromRegDateTimePicker.Size = new System.Drawing.Size(200, 38);
+            this.FromRegDateTimePicker.Size = new System.Drawing.Size(570, 38);
             this.FromRegDateTimePicker.TabIndex = 10;
             // 
             // ToRegDateTimePicker
             // 
-            this.ToRegDateTimePicker.Location = new System.Drawing.Point(1001, 103);
+            this.ToRegDateTimePicker.Location = new System.Drawing.Point(784, 147);
             this.ToRegDateTimePicker.Name = "ToRegDateTimePicker";
-            this.ToRegDateTimePicker.Size = new System.Drawing.Size(200, 38);
+            this.ToRegDateTimePicker.Size = new System.Drawing.Size(570, 38);
             this.ToRegDateTimePicker.TabIndex = 11;
             // 
             // StateComboBox
             // 
             this.StateComboBox.FormattingEnabled = true;
-            this.StateComboBox.Location = new System.Drawing.Point(1561, 106);
+            this.StateComboBox.Location = new System.Drawing.Point(1544, 102);
             this.StateComboBox.Name = "StateComboBox";
-            this.StateComboBox.Size = new System.Drawing.Size(245, 39);
+            this.StateComboBox.Size = new System.Drawing.Size(447, 39);
             this.StateComboBox.TabIndex = 12;
             // 
             // TournametForm

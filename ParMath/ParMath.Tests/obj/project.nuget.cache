@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TFSpbhrW/wFFYaFaejVdc70pCt2RJfqJdTDJzkY3wLIqGsyS7DuhF2SNLtiwh2kgDAggzlBJtE351cTqJADX/g==",
+  "dgSpecHash": "C/RYg9+BDIgMcMEnuvhhVAYDQqJPL8vBewqolwDwjzA6TLYLuZK7ZzMirQhoQTT/l7FKftXbsC4Sk+9mrS4D6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team41\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
+  "projectFilePath": "C:\\Users\\nhevg\\Desktop\\Hackaton_team4\\ParMath\\ParMath.Tests\\ParMath.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nhevg\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\nhevg\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

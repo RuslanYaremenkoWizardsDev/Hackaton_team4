@@ -74,31 +74,35 @@ namespace ParMath
             // 
             // LoginTextBox
             // 
-            this.LoginTextBox.Location = new System.Drawing.Point(88, 110);
+            this.LoginTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
+            this.LoginTextBox.Location = new System.Drawing.Point(51, 110);
             this.LoginTextBox.Name = "LoginTextBox";
-            this.LoginTextBox.Size = new System.Drawing.Size(164, 20);
+            this.LoginTextBox.Size = new System.Drawing.Size(227, 27);
             this.LoginTextBox.TabIndex = 3;
             // 
             // PasswordTextBox
             // 
-            this.PasswordTextBox.Location = new System.Drawing.Point(88, 180);
+            this.PasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
+            this.PasswordTextBox.Location = new System.Drawing.Point(51, 180);
             this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Size = new System.Drawing.Size(164, 20);
+            this.PasswordTextBox.Size = new System.Drawing.Size(227, 27);
             this.PasswordTextBox.TabIndex = 4;
             // 
             // ConfirmPasswordTextBox
             // 
-            this.ConfirmPasswordTextBox.Location = new System.Drawing.Point(88, 258);
+            this.ConfirmPasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
+            this.ConfirmPasswordTextBox.Location = new System.Drawing.Point(51, 258);
             this.ConfirmPasswordTextBox.Name = "ConfirmPasswordTextBox";
-            this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(164, 20);
+            this.ConfirmPasswordTextBox.Size = new System.Drawing.Size(227, 27);
             this.ConfirmPasswordTextBox.TabIndex = 5;
             this.ConfirmPasswordTextBox.Visible = false;
             // 
             // RegistrationButton
             // 
-            this.RegistrationButton.Location = new System.Drawing.Point(70, 326);
+            this.RegistrationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.RegistrationButton.Location = new System.Drawing.Point(51, 338);
             this.RegistrationButton.Name = "RegistrationButton";
-            this.RegistrationButton.Size = new System.Drawing.Size(75, 23);
+            this.RegistrationButton.Size = new System.Drawing.Size(90, 26);
             this.RegistrationButton.TabIndex = 6;
             this.RegistrationButton.Text = "Registration";
             this.RegistrationButton.UseVisualStyleBackColor = true;
@@ -106,9 +110,10 @@ namespace ParMath
             // 
             // SignInButton
             // 
-            this.SignInButton.Location = new System.Drawing.Point(203, 326);
+            this.SignInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.SignInButton.Location = new System.Drawing.Point(203, 338);
             this.SignInButton.Name = "SignInButton";
-            this.SignInButton.Size = new System.Drawing.Size(75, 23);
+            this.SignInButton.Size = new System.Drawing.Size(75, 26);
             this.SignInButton.TabIndex = 7;
             this.SignInButton.Text = "Sign In";
             this.SignInButton.UseVisualStyleBackColor = true;
@@ -116,9 +121,10 @@ namespace ParMath
             // 
             // ConfirmRegistrationButton
             // 
-            this.ConfirmRegistrationButton.Location = new System.Drawing.Point(123, 284);
+            this.ConfirmRegistrationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.ConfirmRegistrationButton.Location = new System.Drawing.Point(51, 291);
             this.ConfirmRegistrationButton.Name = "ConfirmRegistrationButton";
-            this.ConfirmRegistrationButton.Size = new System.Drawing.Size(90, 23);
+            this.ConfirmRegistrationButton.Size = new System.Drawing.Size(90, 26);
             this.ConfirmRegistrationButton.TabIndex = 8;
             this.ConfirmRegistrationButton.Text = "Ok";
             this.ConfirmRegistrationButton.UseVisualStyleBackColor = true;
@@ -129,10 +135,11 @@ namespace ParMath
             // 
             this.ErrorMessage.AutoSize = true;
             this.ErrorMessage.BackColor = System.Drawing.Color.Red;
-            this.ErrorMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.ErrorMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.ErrorMessage.ForeColor = System.Drawing.Color.FloralWhite;
             this.ErrorMessage.Location = new System.Drawing.Point(47, 31);
             this.ErrorMessage.Name = "ErrorMessage";
-            this.ErrorMessage.Size = new System.Drawing.Size(283, 24);
+            this.ErrorMessage.Size = new System.Drawing.Size(216, 17);
             this.ErrorMessage.TabIndex = 9;
             this.ErrorMessage.Text = "Username most be range: 3..255";
             this.ErrorMessage.Visible = false;
@@ -141,6 +148,7 @@ namespace ParMath
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(342, 417);
             this.Controls.Add(this.ErrorMessage);
             this.Controls.Add(this.ConfirmRegistrationButton);

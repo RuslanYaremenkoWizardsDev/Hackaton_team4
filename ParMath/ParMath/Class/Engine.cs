@@ -5,28 +5,51 @@ namespace ParMath.Class
 {
     public class Engine
     {
-        public Dictionary<string, string> AllUser = new Dictionary<string, string>();
         public List<User> Users = new List<User>();
 
-        public void AddToDictionary(User currentUser)
-        {
-            AllUser.Add(currentUser.Username, currentUser.Password);
-        }
-
-        public bool FindInDictionary(string username, string password)
+        public bool FindUser(string username, string password)
         {
             bool isExist = false;
-            foreach (KeyValuePair<string, string> entry in AllUser)
+            foreach (User user in Users)
             {
-                if (username == entry.Key)
+                if (user.Username == username)
                 {
-                    if (password == entry.Value)
+                    if (user.Password == password)
                     {
                         isExist = true;
+                    } else
+                    {
+                        isExist = false;
                     }
                 }
             }
             return isExist;
+        }
+
+        public void Seeds(int quantityUsers)
+        {
+            string defaultUsername = "Shaitan";
+            string defaultPassword = "Password";
+            for ( int i = 0; i  < quantityUsers; i++)
+            {
+                defaultUsername += i;
+                defaultPassword += i;
+                User user = User.CreateUser(defaultUsername, defaultPassword);
+                Users.Add(user);
+            }
+        }
+        public bool UniquelyUser(string username)
+        {
+            bool uniquely = true;
+            foreach ( User user in Users)
+            {
+                if ( user.Username == username)
+                {
+                    uniquely = false;
+                    break;
+                }
+            }
+            return uniquely;
         }
     }
 }

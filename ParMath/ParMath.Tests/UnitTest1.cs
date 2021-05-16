@@ -19,8 +19,7 @@ namespace ParMath.Tests
         [Test]
         public void TestAddToDictionary()
         {
-            _engine.AddToDictionary(_firstUser);
-            Assert.Equals(1, _engine.AllUser.Count); 
+
         }
 
         [TestCase]

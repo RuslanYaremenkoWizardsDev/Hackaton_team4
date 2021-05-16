@@ -1,11 +1,19 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace ParMath.Class
 {
     public class Engine
     {
-        public List<User> Users = new List<User>();
+        private static Engine _engine;
+        public List<User> Users;
+
+        private Engine()
+        {
+            Users = new List<User>();
+        }
 
         public bool FindUser(string username, string password)
         {
@@ -25,7 +33,14 @@ namespace ParMath.Class
             }
             return isExist;
         }
-
+        public static Engine GetEngine()
+        {
+           if(_engine is null)
+            {
+                _engine = new Engine();
+            }
+            return _engine;
+        }
         public void Seeds(int quantityUsers)
         {
             string defaultUsername = "Shaitan";
@@ -50,6 +65,14 @@ namespace ParMath.Class
                 }
             }
             return uniquely;
+        }
+        
+        public void SaveAllUsers()
+        {
+            using (StreamWriter sw = new StreamWriter("Users.txt"))
+            {
+                sw.Write(JsonConvert.SerializeObject(Users));
+            }
         }
     }
 }

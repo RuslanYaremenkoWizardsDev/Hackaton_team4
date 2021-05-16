@@ -14,7 +14,7 @@ namespace ParMath
         }
         private void AuthorizationForm_Load(object sender, EventArgs e)
         {
-            _currentEngine = new Engine();
+            _currentEngine = Engine.GetEngine();
             _currentEngine.Seeds(7);
             _tournametForm = new TournametForm();
             

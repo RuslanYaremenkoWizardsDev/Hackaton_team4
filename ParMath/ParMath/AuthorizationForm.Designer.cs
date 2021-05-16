@@ -146,8 +146,7 @@ namespace ParMath
             // 
             // AuthorizationForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(342, 417);
             this.Controls.Add(this.ErrorMessage);
@@ -160,6 +159,7 @@ namespace ParMath
             this.Controls.Add(this.ConfirmPasswordLabel);
             this.Controls.Add(this.PasswordLabel);
             this.Controls.Add(this.LoginLabel);
+            this.MaximizeBox = false;
             this.Name = "AuthorizationForm";
             this.Text = "Authorization";
             this.Load += new System.EventHandler(this.AuthorizationForm_Load);

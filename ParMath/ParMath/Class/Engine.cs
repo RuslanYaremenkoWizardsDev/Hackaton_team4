@@ -5,16 +5,16 @@ namespace ParMath.Class
 {
     public class Engine
     {
-        private Dictionary<string, string> allUser = new Dictionary<string, string>();
+        public Dictionary<string, string> AllUser = new Dictionary<string, string>();
 
         public void AddToDictionary(User currentUser)
         {
-            allUser.Add(currentUser.Username, currentUser.Password);
+            AllUser.Add(currentUser.Username, currentUser.Password);
         }
 
         public void FindInDictionary(string username, string password)
         {
-            foreach (KeyValuePair<string, string> entry in allUser)
+            foreach (KeyValuePair<string, string> entry in AllUser)
             {
                 if (username == entry.Key)
                 {

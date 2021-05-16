@@ -1,20 +1,31 @@
 using NUnit.Framework;
 using ParMath.Class;
+using ParMath.Interface;
 
 namespace ParMath.Tests
 {
     public class Tests
     {
         private Engine _engine;
+        private User _firstUser;
         [SetUp]
         public void Setup()
         {
+            _engine = new Engine();
+            _firstUser = new User("Shaitan", "111111");
         }
 
         [Test]
-        public void Test1()
+        public void TestAddToDictionary()
         {
-            Assert.Pass();
+            _engine.AddToDictionary(_firstUser);
+            Assert.Equals(1, _engine.AllUser.Count); 
+        }
+
+        [TestCase]
+        public void FindInDictionaryUser()
+        {
+            
         }
     }
 }

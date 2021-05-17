@@ -32,10 +32,10 @@ namespace ParMath
             this.NameOfTournamentLabel = new System.Windows.Forms.Label();
             this.StartDateLabel = new System.Windows.Forms.Label();
             this.LastRegistrationDateLabel = new System.Windows.Forms.Label();
-            this.LevelButton = new System.Windows.Forms.Label();
+            this.LevelLabel = new System.Windows.Forms.Label();
             this.CountOfParticipantsLabel = new System.Windows.Forms.Label();
             this.StateLabel = new System.Windows.Forms.Label();
-            this.ScenarioLabel = new System.Windows.Forms.Label();
+            this.ScenaryLabel = new System.Windows.Forms.Label();
             this.PlaceLabel = new System.Windows.Forms.Label();
             this.DescriptionLabel = new System.Windows.Forms.Label();
             this.NameOfTournamentTextBox = new System.Windows.Forms.TextBox();
@@ -45,15 +45,17 @@ namespace ParMath
             this.LevelComboBox = new System.Windows.Forms.ComboBox();
             this.CountOfParticipantsComboBox = new System.Windows.Forms.ComboBox();
             this.StateComboBox = new System.Windows.Forms.ComboBox();
-            this.ScenarioComboBox = new System.Windows.Forms.ComboBox();
-            this.DescriptionListBox = new System.Windows.Forms.ListBox();
+            this.ScenaryComboBox = new System.Windows.Forms.ComboBox();
             this.Create = new System.Windows.Forms.Button();
+            this.DescriptionTextBox = new System.Windows.Forms.TextBox();
+            this.ErrorMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // NameOfTournamentLabel
             // 
             this.NameOfTournamentLabel.AutoSize = true;
             this.NameOfTournamentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NameOfTournamentLabel.ForeColor = System.Drawing.Color.White;
             this.NameOfTournamentLabel.Location = new System.Drawing.Point(38, 50);
             this.NameOfTournamentLabel.Name = "NameOfTournamentLabel";
             this.NameOfTournamentLabel.Size = new System.Drawing.Size(124, 16);
@@ -64,6 +66,7 @@ namespace ParMath
             // 
             this.StartDateLabel.AutoSize = true;
             this.StartDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StartDateLabel.ForeColor = System.Drawing.Color.White;
             this.StartDateLabel.Location = new System.Drawing.Point(38, 86);
             this.StartDateLabel.Name = "StartDateLabel";
             this.StartDateLabel.Size = new System.Drawing.Size(65, 16);
@@ -74,26 +77,29 @@ namespace ParMath
             // 
             this.LastRegistrationDateLabel.AutoSize = true;
             this.LastRegistrationDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LastRegistrationDateLabel.ForeColor = System.Drawing.Color.White;
             this.LastRegistrationDateLabel.Location = new System.Drawing.Point(38, 120);
             this.LastRegistrationDateLabel.Name = "LastRegistrationDateLabel";
             this.LastRegistrationDateLabel.Size = new System.Drawing.Size(132, 16);
             this.LastRegistrationDateLabel.TabIndex = 2;
             this.LastRegistrationDateLabel.Text = "Last registration date";
             // 
-            // LevelButton
+            // LevelLabel
             // 
-            this.LevelButton.AutoSize = true;
-            this.LevelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LevelButton.Location = new System.Drawing.Point(38, 164);
-            this.LevelButton.Name = "LevelButton";
-            this.LevelButton.Size = new System.Drawing.Size(41, 16);
-            this.LevelButton.TabIndex = 3;
-            this.LevelButton.Text = "Level";
+            this.LevelLabel.AutoSize = true;
+            this.LevelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LevelLabel.ForeColor = System.Drawing.Color.White;
+            this.LevelLabel.Location = new System.Drawing.Point(38, 164);
+            this.LevelLabel.Name = "LevelLabel";
+            this.LevelLabel.Size = new System.Drawing.Size(41, 16);
+            this.LevelLabel.TabIndex = 3;
+            this.LevelLabel.Text = "Level";
             // 
             // CountOfParticipantsLabel
             // 
             this.CountOfParticipantsLabel.AutoSize = true;
             this.CountOfParticipantsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CountOfParticipantsLabel.ForeColor = System.Drawing.Color.White;
             this.CountOfParticipantsLabel.Location = new System.Drawing.Point(38, 206);
             this.CountOfParticipantsLabel.Name = "CountOfParticipantsLabel";
             this.CountOfParticipantsLabel.Size = new System.Drawing.Size(128, 16);
@@ -104,26 +110,29 @@ namespace ParMath
             // 
             this.StateLabel.AutoSize = true;
             this.StateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StateLabel.ForeColor = System.Drawing.Color.White;
             this.StateLabel.Location = new System.Drawing.Point(38, 252);
             this.StateLabel.Name = "StateLabel";
             this.StateLabel.Size = new System.Drawing.Size(39, 16);
             this.StateLabel.TabIndex = 5;
             this.StateLabel.Text = "State";
             // 
-            // ScenarioLabel
+            // ScenaryLabel
             // 
-            this.ScenarioLabel.AutoSize = true;
-            this.ScenarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ScenarioLabel.Location = new System.Drawing.Point(38, 301);
-            this.ScenarioLabel.Name = "ScenarioLabel";
-            this.ScenarioLabel.Size = new System.Drawing.Size(62, 16);
-            this.ScenarioLabel.TabIndex = 6;
-            this.ScenarioLabel.Text = "Scenario";
+            this.ScenaryLabel.AutoSize = true;
+            this.ScenaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ScenaryLabel.ForeColor = System.Drawing.Color.White;
+            this.ScenaryLabel.Location = new System.Drawing.Point(38, 301);
+            this.ScenaryLabel.Name = "ScenarioLabel";
+            this.ScenaryLabel.Size = new System.Drawing.Size(62, 16);
+            this.ScenaryLabel.TabIndex = 6;
+            this.ScenaryLabel.Text = "Scenario";
             // 
             // PlaceLabel
             // 
             this.PlaceLabel.AutoSize = true;
             this.PlaceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PlaceLabel.ForeColor = System.Drawing.Color.White;
             this.PlaceLabel.Location = new System.Drawing.Point(38, 349);
             this.PlaceLabel.Name = "PlaceLabel";
             this.PlaceLabel.Size = new System.Drawing.Size(43, 16);
@@ -134,6 +143,7 @@ namespace ParMath
             // 
             this.DescriptionLabel.AutoSize = true;
             this.DescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DescriptionLabel.ForeColor = System.Drawing.Color.White;
             this.DescriptionLabel.Location = new System.Drawing.Point(432, 50);
             this.DescriptionLabel.Name = "DescriptionLabel";
             this.DescriptionLabel.Size = new System.Drawing.Size(76, 16);
@@ -142,17 +152,23 @@ namespace ParMath
             // 
             // NameOfTournamentTextBox
             // 
+            this.NameOfTournamentTextBox.BackColor = System.Drawing.Color.Black;
+            this.NameOfTournamentTextBox.ForeColor = System.Drawing.Color.White;
             this.NameOfTournamentTextBox.Location = new System.Drawing.Point(204, 46);
             this.NameOfTournamentTextBox.Name = "NameOfTournamentTextBox";
             this.NameOfTournamentTextBox.Size = new System.Drawing.Size(123, 20);
             this.NameOfTournamentTextBox.TabIndex = 9;
+            this.NameOfTournamentTextBox.Text = "MyTournament";
             // 
             // PlaceTextBox
             // 
+            this.PlaceTextBox.BackColor = System.Drawing.Color.Black;
+            this.PlaceTextBox.ForeColor = System.Drawing.Color.White;
             this.PlaceTextBox.Location = new System.Drawing.Point(204, 345);
             this.PlaceTextBox.Name = "PlaceTextBox";
             this.PlaceTextBox.Size = new System.Drawing.Size(123, 20);
             this.PlaceTextBox.TabIndex = 10;
+            this.PlaceTextBox.Text = "Dnipro";
             // 
             // StartDateDateTimePicker
             // 
@@ -170,7 +186,14 @@ namespace ParMath
             // 
             // LevelComboBox
             // 
+            this.LevelComboBox.BackColor = System.Drawing.Color.Black;
+            this.LevelComboBox.ForeColor = System.Drawing.Color.White;
+            this.LevelComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.LevelComboBox.FormattingEnabled = true;
+            this.LevelComboBox.Items.AddRange(new object[] {
+            "Beginer",
+            "Midle",
+            "Advence"});
             this.LevelComboBox.Location = new System.Drawing.Point(204, 159);
             this.LevelComboBox.Name = "LevelComboBox";
             this.LevelComboBox.Size = new System.Drawing.Size(123, 21);
@@ -178,7 +201,17 @@ namespace ParMath
             // 
             // CountOfParticipantsComboBox
             // 
+            this.CountOfParticipantsComboBox.BackColor = System.Drawing.Color.Black;
+            this.CountOfParticipantsComboBox.ForeColor = System.Drawing.Color.White;
+            this.CountOfParticipantsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CountOfParticipantsComboBox.FormattingEnabled = true;
+            this.CountOfParticipantsComboBox.Items.AddRange(new object[] {
+            "128",
+            "64",
+            "32",
+            "16",
+            "8",
+            "4"});
             this.CountOfParticipantsComboBox.Location = new System.Drawing.Point(204, 201);
             this.CountOfParticipantsComboBox.Name = "CountOfParticipantsComboBox";
             this.CountOfParticipantsComboBox.Size = new System.Drawing.Size(123, 21);
@@ -186,46 +219,91 @@ namespace ParMath
             // 
             // StateComboBox
             // 
+            this.StateComboBox.BackColor = System.Drawing.Color.Black;
+            this.StateComboBox.ForeColor = System.Drawing.Color.White;
+            this.StateComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.StateComboBox.FormattingEnabled = true;
+            this.StateComboBox.Items.AddRange(new object[] {
+            "InProgres",
+            "Registration",
+            "NotStarted",
+            "Finished"});
             this.StateComboBox.Location = new System.Drawing.Point(204, 247);
             this.StateComboBox.Name = "StateComboBox";
             this.StateComboBox.Size = new System.Drawing.Size(123, 21);
             this.StateComboBox.TabIndex = 15;
             // 
-            // ScenarioComboBox
+            // ScenaryComboBox
             // 
-            this.ScenarioComboBox.FormattingEnabled = true;
-            this.ScenarioComboBox.Location = new System.Drawing.Point(204, 296);
-            this.ScenarioComboBox.Name = "ScenarioComboBox";
-            this.ScenarioComboBox.Size = new System.Drawing.Size(123, 21);
-            this.ScenarioComboBox.TabIndex = 16;
+            this.ScenaryComboBox.BackColor = System.Drawing.Color.Black;
+            this.ScenaryComboBox.ForeColor = System.Drawing.Color.White;
+            this.ScenaryComboBox.FormattingEnabled = true;
+            this.ScenaryComboBox.Location = new System.Drawing.Point(204, 296);
+            this.ScenaryComboBox.Name = "ScenarioComboBox";
+            this.ScenaryComboBox.Size = new System.Drawing.Size(123, 21);
+            this.ScenaryComboBox.TabIndex = 16;
+            this.ScenaryComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ScenaryComboBox.FormattingEnabled = true;
+            this.ScenaryComboBox.Items.AddRange(new object[] {
+            "BestOfOne",
+            "BestOfThree",
+            "BestOfFive"});
+            this.ScenaryComboBox.Location = new System.Drawing.Point(204, 296);
+            this.ScenaryComboBox.Name = "ScenaryComboBox";
+            this.ScenaryComboBox.Size = new System.Drawing.Size(123, 21);
+            this.ScenaryComboBox.TabIndex = 16;
             // 
             // DescriptionListBox
             // 
-            this.DescriptionListBox.FormattingEnabled = true;
-            this.DescriptionListBox.Location = new System.Drawing.Point(376, 82);
-            this.DescriptionListBox.Name = "DescriptionListBox";
-            this.DescriptionListBox.Size = new System.Drawing.Size(186, 277);
-            this.DescriptionListBox.TabIndex = 17;
+            this.DescriptionTextBox.BackColor = System.Drawing.Color.Black;
+            this.DescriptionTextBox.ForeColor = System.Drawing.Color.White;
+            this.DescriptionTextBox.Location = new System.Drawing.Point(376, 82);
+            this.DescriptionTextBox.Name = "DescriptionListBox";
+            this.DescriptionTextBox.Size = new System.Drawing.Size(186, 277);
+            this.DescriptionTextBox.TabIndex = 17;
             // 
             // Create
             // 
+            this.Create.BackColor = System.Drawing.Color.Black;
             this.Create.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Create.ForeColor = System.Drawing.Color.White;
             this.Create.Location = new System.Drawing.Point(239, 406);
             this.Create.Name = "Create";
             this.Create.Size = new System.Drawing.Size(75, 23);
             this.Create.TabIndex = 18;
             this.Create.Text = "Create";
-            this.Create.UseVisualStyleBackColor = true;
+            this.Create.UseVisualStyleBackColor = false;
+            this.Create.Click += new System.EventHandler(this.Create_Click);
+            // 
+            // DescriptionTextBox
+            // 
+            this.DescriptionTextBox.Location = new System.Drawing.Point(346, 65);
+            this.DescriptionTextBox.Multiline = true;
+            this.DescriptionTextBox.Name = "DescriptionTextBox";
+            this.DescriptionTextBox.Size = new System.Drawing.Size(247, 300);
+            this.DescriptionTextBox.TabIndex = 19;
+            // 
+            // ErrorMessage
+            // 
+            this.ErrorMessage.AutoSize = true;
+            this.ErrorMessage.BackColor = System.Drawing.Color.Red;
+            this.ErrorMessage.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ErrorMessage.Location = new System.Drawing.Point(38, 9);
+            this.ErrorMessage.Name = "ErrorMessage";
+            this.ErrorMessage.Size = new System.Drawing.Size(0, 13);
+            this.ErrorMessage.TabIndex = 20;
             // 
             // CreateTournamentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(605, 459);
+            this.Controls.Add(this.ErrorMessage);
+            this.Controls.Add(this.DescriptionTextBox);
             this.Controls.Add(this.Create);
-            this.Controls.Add(this.DescriptionListBox);
-            this.Controls.Add(this.ScenarioComboBox);
+            this.Controls.Add(this.ScenaryComboBox);
             this.Controls.Add(this.StateComboBox);
             this.Controls.Add(this.CountOfParticipantsComboBox);
             this.Controls.Add(this.LevelComboBox);
@@ -235,15 +313,17 @@ namespace ParMath
             this.Controls.Add(this.NameOfTournamentTextBox);
             this.Controls.Add(this.DescriptionLabel);
             this.Controls.Add(this.PlaceLabel);
-            this.Controls.Add(this.ScenarioLabel);
+            this.Controls.Add(this.ScenaryLabel);
             this.Controls.Add(this.StateLabel);
             this.Controls.Add(this.CountOfParticipantsLabel);
-            this.Controls.Add(this.LevelButton);
+            this.Controls.Add(this.LevelLabel);
             this.Controls.Add(this.LastRegistrationDateLabel);
             this.Controls.Add(this.StartDateLabel);
             this.Controls.Add(this.NameOfTournamentLabel);
+            this.MaximizeBox = false;
             this.Name = "CreateTournamentForm";
             this.Text = "CreateTournamentForm";
+            this.Load += new System.EventHandler(this.CreateTournamentForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,10 +334,10 @@ namespace ParMath
         private System.Windows.Forms.Label NameOfTournamentLabel;
         private System.Windows.Forms.Label StartDateLabel;
         private System.Windows.Forms.Label LastRegistrationDateLabel;
-        private System.Windows.Forms.Label LevelButton;
+        private System.Windows.Forms.Label LevelLabel;
         private System.Windows.Forms.Label CountOfParticipantsLabel;
         private System.Windows.Forms.Label StateLabel;
-        private System.Windows.Forms.Label ScenarioLabel;
+        private System.Windows.Forms.Label ScenaryLabel;
         private System.Windows.Forms.Label PlaceLabel;
         private System.Windows.Forms.Label DescriptionLabel;
         private System.Windows.Forms.TextBox NameOfTournamentTextBox;
@@ -267,8 +347,9 @@ namespace ParMath
         private System.Windows.Forms.ComboBox LevelComboBox;
         private System.Windows.Forms.ComboBox CountOfParticipantsComboBox;
         private System.Windows.Forms.ComboBox StateComboBox;
-        private System.Windows.Forms.ComboBox ScenarioComboBox;
-        private System.Windows.Forms.ListBox DescriptionListBox;
+        private System.Windows.Forms.ComboBox ScenaryComboBox;
         private System.Windows.Forms.Button Create;
+        private System.Windows.Forms.TextBox DescriptionTextBox;
+        private System.Windows.Forms.Label ErrorMessage;
     }
 }

@@ -13,7 +13,7 @@ namespace ParMath.Tests
         [SetUp]
         public void Setup()
         {
-            _engine = new Engine();
+            _engine = Engine.GetEngine();
             _firstUser = User.CreateUser("Shaitan", "111111");
             _invalideUser = User.CreateUser("Sh", "000");
             _engine.Users.Add(_firstUser);

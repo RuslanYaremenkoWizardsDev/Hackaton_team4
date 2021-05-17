@@ -1,6 +1,7 @@
 ﻿using System;
 using ParMath.Class;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace ParMath
 {
@@ -11,13 +12,53 @@ namespace ParMath
         public AuthorizationForm()
         {
             InitializeComponent();
+            if (ChangeTheme.thememode == true)
+            {
+                this.BackColor = Color.White;
+                LoginLabel.ForeColor = Color.Black;
+                PasswordLabel.ForeColor = Color.Black;
+                ConfirmPasswordLabel.ForeColor = Color.Black;
+                LoginTextBox.BackColor = Color.White;
+                LoginTextBox.ForeColor = Color.Black;
+                PasswordTextBox.BackColor = Color.White;
+                PasswordTextBox.ForeColor = Color.Black;
+                ConfirmPasswordTextBox.BackColor = Color.White;
+                ConfirmPasswordTextBox.ForeColor = Color.Black;
+                ConfirmRegistrationButton.BackColor = Color.White;
+                ConfirmRegistrationButton.ForeColor = Color.Black;
+                RegistrationButton.BackColor = Color.White;
+                RegistrationButton.ForeColor = Color.Black;
+                SignInButton.BackColor = Color.White;
+                SignInButton.ForeColor = Color.Black;
+            }
+            else 
+            {
+                this.BackColor = Color.Black;
+                LoginLabel.ForeColor = Color.White;
+                PasswordLabel.ForeColor = Color.White;
+                ConfirmPasswordLabel.ForeColor = Color.White;
+                LoginTextBox.BackColor = Color.Black;
+                LoginTextBox.ForeColor = Color.White;
+                PasswordTextBox.BackColor = Color.Black;
+                PasswordTextBox.ForeColor = Color.White;
+                ConfirmPasswordTextBox.BackColor = Color.Black;
+                ConfirmPasswordTextBox.ForeColor = Color.White;
+                ConfirmRegistrationButton.BackColor = Color.Black;
+                ConfirmRegistrationButton.ForeColor = Color.White;
+                RegistrationButton.BackColor = Color.Black;
+                RegistrationButton.ForeColor = Color.White;
+                SignInButton.BackColor = Color.Black;
+                SignInButton.ForeColor = Color.White;
+                SignInButton.FlatAppearance.BorderSize = 0;
+                SignInButton.FlatStyle = FlatStyle.Flat;
+            }
         }
         private void AuthorizationForm_Load(object sender, EventArgs e)
         {
-            _currentEngine = new Engine();
+            _currentEngine = Engine.GetEngine();
             _currentEngine.Seeds(7);
             _tournametForm = new TournametForm();
-            
+            _currentEngine.DeserializerUsers();
         }
 
         private void RegistrationButton_Click(object sender, EventArgs e)

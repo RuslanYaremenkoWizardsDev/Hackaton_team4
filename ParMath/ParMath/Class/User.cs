@@ -12,6 +12,12 @@ namespace ParMath.Class
         public List<Tournament> CurrentTournament = new List<Tournament>();
         public string Username { get; set; }
         public string Password { get; set; }
+
+        public User()
+        {
+
+        }
+
         private User(string username, string password)
         {
                 Username = username;

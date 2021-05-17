@@ -14,6 +14,7 @@ namespace ParMath
         public TournametForm()
         {
             InitializeComponent();
+
             if (ChangeTheme.thememode == true)
             {
                 this.BackColor = Color.White;
@@ -122,6 +123,9 @@ namespace ParMath
                 NotStartedRichTextBox.BackColor = Color.Black;
                 NotStartedRichTextBox.ForeColor = Color.White;
             }
+
+            _currentEngine = Engine.GetEngine();
+            authorizationForm = new AuthorizationForm();
         }
         private void TournametForm_Load(object sender, EventArgs e)
         {
@@ -132,7 +136,6 @@ namespace ParMath
         }
         private void LogOutbutton_Click(object sender, EventArgs e)
         {
-            _currentEngine.SaveAllTurnaments();
             _currentEngine.SaveAllUsers();
             authorizationForm.Show();
             this.Hide();

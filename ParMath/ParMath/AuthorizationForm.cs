@@ -58,7 +58,7 @@ namespace ParMath
             _currentEngine = Engine.GetEngine();
             _currentEngine.Seeds(7);
             _tournametForm = new TournametForm();
-            
+            _currentEngine.DeserializerUsers();
         }
 
         private void RegistrationButton_Click(object sender, EventArgs e)

@@ -57,16 +57,16 @@ namespace ParMath
             this.CupGridButton = new System.Windows.Forms.Button();
             this.StatsTabPage = new System.Windows.Forms.TabPage();
             this.StatsTournamentPanel = new System.Windows.Forms.Panel();
-            this.TournamentsPanel = new System.Windows.Forms.Panel();
-            this.TournamentsLabel = new System.Windows.Forms.Label();
+            //this.TournamentsPanel = new System.Windows.Forms.Panel();
+            //this.TournamentsLabel = new System.Windows.Forms.Label();
             this.TournamentsStatsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.ActiveRichTextBox = new System.Windows.Forms.RichTextBox();
             this.FinishedRichTextBox = new System.Windows.Forms.RichTextBox();
             this.NotStartedRichTextBox = new System.Windows.Forms.RichTextBox();
             this.NumberOfTournamentsRichTextBox = new System.Windows.Forms.RichTextBox();
             this.StatsPlayersPanel = new System.Windows.Forms.Panel();
-            this.PlayersPanel = new System.Windows.Forms.Panel();
-            this.PlayersLabel = new System.Windows.Forms.Label();
+            //this.PlayersPanel = new System.Windows.Forms.Panel();
+            //this.PlayersLabel = new System.Windows.Forms.Label();
             this.PlayersStatsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.NameStatsRichTextBox = new System.Windows.Forms.RichTextBox();
             this.GamesRichTextBox = new System.Windows.Forms.RichTextBox();
@@ -620,15 +620,15 @@ namespace ParMath
             this.StatsPlayersPanel.Name = "StatsPlayersPanel";
             this.StatsPlayersPanel.Size = new System.Drawing.Size(1045, 370);
             this.StatsPlayersPanel.TabIndex = 4;
-            // 
-            // PlayersPanel
-            // 
-            this.PlayersPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PlayersPanel.Controls.Add(this.PlayersLabel);
-            this.PlayersPanel.Location = new System.Drawing.Point(455, 51);
-            this.PlayersPanel.Name = "PlayersPanel";
-            this.PlayersPanel.Size = new System.Drawing.Size(134, 50);
-            this.PlayersPanel.TabIndex = 0;
+            //// 
+            //// PlayersPanel
+            //// 
+            //this.PlayersPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            //this.PlayersPanel.Controls.Add(this.PlayersLabel);
+            //this.PlayersPanel.Location = new System.Drawing.Point(455, 51);
+            //this.PlayersPanel.Name = "PlayersPanel";
+            //this.PlayersPanel.Size = new System.Drawing.Size(134, 50);
+            //this.PlayersPanel.TabIndex = 0;
             // 
             // PlayersLabel
             // 
@@ -739,38 +739,38 @@ namespace ParMath
             this.CupWinsRichTextBox.Size = new System.Drawing.Size(202, 83);
             this.CupWinsRichTextBox.TabIndex = 4;
             this.CupWinsRichTextBox.Text = "Cup wins";
-            // 
-            // TournamentsPanel
-            // 
-            this.TournamentsPanel.BackColor = System.Drawing.Color.Black;
-            this.TournamentsPanel.Controls.Add(this.TournamentsLabel);
-            this.TournamentsPanel.Location = new System.Drawing.Point(6, 190);
-            this.TournamentsPanel.Margin = new System.Windows.Forms.Padding(1);
-            this.TournamentsPanel.Name = "TournamentsPanel";
-            this.TournamentsPanel.Size = new System.Drawing.Size(806, 42);
-            this.TournamentsPanel.TabIndex = 1;
-            // 
-            // TournamentsLabel
-            // 
-            this.TournamentsLabel.AutoSize = true;
-            this.TournamentsLabel.BackColor = System.Drawing.Color.Black;
-            this.TournamentsLabel.ForeColor = System.Drawing.Color.White;
-            this.TournamentsLabel.Location = new System.Drawing.Point(344, 10);
-            this.TournamentsLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.TournamentsLabel.Name = "TournamentsLabel";
-            this.TournamentsLabel.Size = new System.Drawing.Size(133, 24);
-            this.TournamentsLabel.TabIndex = 0;
-            this.TournamentsLabel.Text = "Tournaments";
-            // 
-            // PlayersPanel
-            // 
-            this.PlayersPanel.BackColor = System.Drawing.Color.Black;
-            this.PlayersPanel.Controls.Add(this.PlayersLabel);
-            this.PlayersPanel.Location = new System.Drawing.Point(6, 13);
-            this.PlayersPanel.Margin = new System.Windows.Forms.Padding(1);
-            this.PlayersPanel.Name = "PlayersPanel";
-            this.PlayersPanel.Size = new System.Drawing.Size(806, 42);
-            this.PlayersPanel.TabIndex = 0;
+            //// 
+            //// TournamentsPanel
+            //// 
+            //this.TournamentsPanel.BackColor = System.Drawing.Color.Black;
+            //this.TournamentsPanel.Controls.Add(this.TournamentsLabel);
+            //this.TournamentsPanel.Location = new System.Drawing.Point(6, 190);
+            //this.TournamentsPanel.Margin = new System.Windows.Forms.Padding(1);
+            //this.TournamentsPanel.Name = "TournamentsPanel";
+            //this.TournamentsPanel.Size = new System.Drawing.Size(806, 42);
+            //this.TournamentsPanel.TabIndex = 1;
+            //// 
+            //// TournamentsLabel
+            //// 
+            //this.TournamentsLabel.AutoSize = true;
+            //this.TournamentsLabel.BackColor = System.Drawing.Color.Black;
+            //this.TournamentsLabel.ForeColor = System.Drawing.Color.White;
+            //this.TournamentsLabel.Location = new System.Drawing.Point(344, 10);
+            //this.TournamentsLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            //this.TournamentsLabel.Name = "TournamentsLabel";
+            //this.TournamentsLabel.Size = new System.Drawing.Size(133, 24);
+            //this.TournamentsLabel.TabIndex = 0;
+            //this.TournamentsLabel.Text = "Tournaments";
+            //// 
+            //// PlayersPanel
+            //// 
+            //this.PlayersPanel.BackColor = System.Drawing.Color.Black;
+            //this.PlayersPanel.Controls.Add(this.PlayersLabel);
+            //this.PlayersPanel.Location = new System.Drawing.Point(6, 13);
+            //this.PlayersPanel.Margin = new System.Windows.Forms.Padding(1);
+            //this.PlayersPanel.Name = "PlayersPanel";
+            //this.PlayersPanel.Size = new System.Drawing.Size(806, 42);
+            //this.PlayersPanel.TabIndex = 0;
             // 
             // PlayersLabel
             // 

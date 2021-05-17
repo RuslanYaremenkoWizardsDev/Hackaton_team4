@@ -32,7 +32,7 @@ namespace ParMath
                 LevelLabel.ForeColor = Color.Black;
                 CountOfParticipantsLabel.ForeColor = Color.Black;
                 StateLabel.ForeColor = Color.Black;
-                ScenarioLabel.ForeColor = Color.Black;
+                ScenaryLabel.ForeColor = Color.Black;
                 PlaceLabel.ForeColor = Color.Black;
                 DescriptionLabel.ForeColor = Color.Black;
                 Create.BackColor = Color.White;
@@ -41,8 +41,8 @@ namespace ParMath
                 NameOfTournamentTextBox.ForeColor = Color.Black;
                 PlaceTextBox.BackColor = Color.White;
                 PlaceTextBox.ForeColor = Color.Black;
-                DescriptionListBox.BackColor = Color.White;
-                DescriptionListBox.ForeColor = Color.Black;
+                DescriptionTextBox.BackColor = Color.White;
+                DescriptionTextBox.ForeColor = Color.Black;
                 StartDateDateTimePicker.CalendarForeColor = Color.Black;
             }
             else
@@ -54,7 +54,7 @@ namespace ParMath
                 LevelLabel.ForeColor = Color.White;
                 CountOfParticipantsLabel.ForeColor = Color.White;
                 StateLabel.ForeColor = Color.White;
-                ScenarioLabel.ForeColor = Color.White;
+                ScenaryLabel.ForeColor = Color.White;
                 PlaceLabel.ForeColor = Color.White;
                 DescriptionLabel.ForeColor = Color.White;
                 Create.BackColor = Color.Black;
@@ -63,8 +63,8 @@ namespace ParMath
                 NameOfTournamentTextBox.ForeColor = Color.White;
                 PlaceTextBox.BackColor = Color.Black;
                 PlaceTextBox.ForeColor = Color.White;
-                DescriptionListBox.BackColor = Color.Black;
-                DescriptionListBox.ForeColor = Color.White;
+                DescriptionTextBox.BackColor = Color.Black;
+                DescriptionTextBox.ForeColor = Color.White;
                 StartDateDateTimePicker.CalendarForeColor = Color.White;
             }
         }
@@ -73,13 +73,6 @@ namespace ParMath
         {
             MyAccountForm myAccountForm = new MyAccountForm();
             myAccountForm.Show();
-            this.Hide();
-        }
-
-        private void Create_Click(object sender, EventArgs e)
-        {
-            TournametForm tournamet = new TournametForm();
-            tournamet.Show();
             this.Hide();
         }
 

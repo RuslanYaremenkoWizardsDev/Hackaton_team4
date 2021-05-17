@@ -119,14 +119,14 @@ namespace ParMath
             // 
             // ScenaryLabel
             // 
-            this.ScenarioLabel.AutoSize = true;
-            this.ScenarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ScenarioLabel.ForeColor = System.Drawing.Color.White;
-            this.ScenarioLabel.Location = new System.Drawing.Point(38, 301);
-            this.ScenarioLabel.Name = "ScenarioLabel";
-            this.ScenarioLabel.Size = new System.Drawing.Size(62, 16);
-            this.ScenarioLabel.TabIndex = 6;
-            this.ScenarioLabel.Text = "Scenario";
+            this.ScenaryLabel.AutoSize = true;
+            this.ScenaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ScenaryLabel.ForeColor = System.Drawing.Color.White;
+            this.ScenaryLabel.Location = new System.Drawing.Point(38, 301);
+            this.ScenaryLabel.Name = "ScenarioLabel";
+            this.ScenaryLabel.Size = new System.Drawing.Size(62, 16);
+            this.ScenaryLabel.TabIndex = 6;
+            this.ScenaryLabel.Text = "Scenario";
             // 
             // PlaceLabel
             // 
@@ -235,13 +235,13 @@ namespace ParMath
             // 
             // ScenaryComboBox
             // 
-            this.ScenarioComboBox.BackColor = System.Drawing.Color.Black;
-            this.ScenarioComboBox.ForeColor = System.Drawing.Color.White;
-            this.ScenarioComboBox.FormattingEnabled = true;
-            this.ScenarioComboBox.Location = new System.Drawing.Point(204, 296);
-            this.ScenarioComboBox.Name = "ScenarioComboBox";
-            this.ScenarioComboBox.Size = new System.Drawing.Size(123, 21);
-            this.ScenarioComboBox.TabIndex = 16;
+            this.ScenaryComboBox.BackColor = System.Drawing.Color.Black;
+            this.ScenaryComboBox.ForeColor = System.Drawing.Color.White;
+            this.ScenaryComboBox.FormattingEnabled = true;
+            this.ScenaryComboBox.Location = new System.Drawing.Point(204, 296);
+            this.ScenaryComboBox.Name = "ScenarioComboBox";
+            this.ScenaryComboBox.Size = new System.Drawing.Size(123, 21);
+            this.ScenaryComboBox.TabIndex = 16;
             this.ScenaryComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ScenaryComboBox.FormattingEnabled = true;
             this.ScenaryComboBox.Items.AddRange(new object[] {
@@ -255,13 +255,12 @@ namespace ParMath
             // 
             // DescriptionListBox
             // 
-            this.DescriptionListBox.BackColor = System.Drawing.Color.Black;
-            this.DescriptionListBox.ForeColor = System.Drawing.Color.White;
-            this.DescriptionListBox.FormattingEnabled = true;
-            this.DescriptionListBox.Location = new System.Drawing.Point(376, 82);
-            this.DescriptionListBox.Name = "DescriptionListBox";
-            this.DescriptionListBox.Size = new System.Drawing.Size(186, 277);
-            this.DescriptionListBox.TabIndex = 17;
+            this.DescriptionTextBox.BackColor = System.Drawing.Color.Black;
+            this.DescriptionTextBox.ForeColor = System.Drawing.Color.White;
+            this.DescriptionTextBox.Location = new System.Drawing.Point(376, 82);
+            this.DescriptionTextBox.Name = "DescriptionListBox";
+            this.DescriptionTextBox.Size = new System.Drawing.Size(186, 277);
+            this.DescriptionTextBox.TabIndex = 17;
             // 
             // Create
             // 

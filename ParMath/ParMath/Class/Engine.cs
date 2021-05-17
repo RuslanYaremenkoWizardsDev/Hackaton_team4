@@ -9,7 +9,8 @@ namespace ParMath.Class
     {
         private static Engine _engine;
         public List<User> Users;
-
+        public List<Tournament> Tournaments;
+        public User CurrentUser { get; set; }
         private Engine()
         {
             Users = new List<User>();
@@ -25,6 +26,7 @@ namespace ParMath.Class
                     if (user.Password == password)
                     {
                         isExist = true;
+                        CurrentUser = user;
                     } else
                     {
                         isExist = false;
@@ -66,7 +68,16 @@ namespace ParMath.Class
             }
             return uniquely;
         }
-        
+        public void DeserializerUsers()
+        {
+            string fileContent = string.Empty;
+            using (StreamReader sr = new StreamReader("Users.txt"))
+            {
+                fileContent = sr.ReadToEnd();
+            }
+            Users = JsonConvert.DeserializeObject<List<User>>(fileContent);
+        }
+
         public void SaveAllUsers()
         {
             using (StreamWriter sw = new StreamWriter("Users.txt"))

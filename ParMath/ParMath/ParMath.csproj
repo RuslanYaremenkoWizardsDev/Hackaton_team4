@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\ChangeTheme.cs" />
+    <Compile Include="Class\MyEnum.cs" />
     <Compile Include="Class\Engine.cs" />
     <Compile Include="Class\Tournament.cs" />
     <Compile Include="Class\User.cs" />
@@ -64,6 +65,12 @@
     </Compile>
     <Compile Include="CreateTournamentForm.Designer.cs">
       <DependentUpon>CreateTournamentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CupGridForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CupGridForm.Designer.cs">
+      <DependentUpon>CupGridForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MyAccountForm.cs">
       <SubType>Form</SubType>
@@ -86,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateTournamentForm.resx">
       <DependentUpon>CreateTournamentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CupGridForm.resx">
+      <DependentUpon>CupGridForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyAccountForm.resx">
       <DependentUpon>MyAccountForm.cs</DependentUpon>

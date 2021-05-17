@@ -32,18 +32,18 @@ namespace ParMath
             this.LogOutbutton = new System.Windows.Forms.Button();
             this.TabControl = new System.Windows.Forms.TabControl();
             this.TournamentsTabPage = new System.Windows.Forms.TabPage();
+            this.TournamentsSearchPanel = new System.Windows.Forms.Panel();
+            this.SearchByStartDateLabel = new System.Windows.Forms.Label();
             this.StateComboBox = new System.Windows.Forms.ComboBox();
-            this.ToRegDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.FromRegDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.ToStartDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.FromStartDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SearchByStateLabel = new System.Windows.Forms.Label();
+            this.ToRegDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.ToStartDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.FromRegDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SearchByRegDateLabel = new System.Windows.Forms.Label();
-            this.SearchByStartDateLabel = new System.Windows.Forms.Label();
             this.TournamentsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.NameTournamentsRichTextBox = new System.Windows.Forms.RichTextBox();
             this.ModeRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.PlaceRichTextBox = new System.Windows.Forms.RichTextBox();
             this.StartDateRichTextBox = new System.Windows.Forms.RichTextBox();
             this.LastRegDateRichTextBox = new System.Windows.Forms.RichTextBox();
             this.StateRichTextBox = new System.Windows.Forms.RichTextBox();
@@ -51,15 +51,22 @@ namespace ParMath
             this.ParticipantsRichTextBox = new System.Windows.Forms.RichTextBox();
             this.ScenarioRichTextBox = new System.Windows.Forms.RichTextBox();
             this.ActionsRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.PlaceRichTextBox = new System.Windows.Forms.RichTextBox();
             this.ClearAllButton = new System.Windows.Forms.Button();
             this.CreateTournamentTabPage = new System.Windows.Forms.TabPage();
             this.CupGridButton = new System.Windows.Forms.Button();
             this.StatsTabPage = new System.Windows.Forms.TabPage();
+            this.StatsTournamentPanel = new System.Windows.Forms.Panel();
+            this.TournamentsPanel = new System.Windows.Forms.Panel();
+            this.TournamentsLabel = new System.Windows.Forms.Label();
             this.TournamentsStatsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.ActiveRichTextBox = new System.Windows.Forms.RichTextBox();
             this.FinishedRichTextBox = new System.Windows.Forms.RichTextBox();
             this.NotStartedRichTextBox = new System.Windows.Forms.RichTextBox();
             this.NumberOfTournamentsRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.StatsPlayersPanel = new System.Windows.Forms.Panel();
+            this.PlayersPanel = new System.Windows.Forms.Panel();
+            this.PlayersLabel = new System.Windows.Forms.Label();
             this.PlayersStatsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.NameStatsRichTextBox = new System.Windows.Forms.RichTextBox();
             this.GamesRichTextBox = new System.Windows.Forms.RichTextBox();
@@ -73,13 +80,16 @@ namespace ParMath
             this.GoToMyAccountButton = new System.Windows.Forms.Button();
             this.TabControl.SuspendLayout();
             this.TournamentsTabPage.SuspendLayout();
+            this.TournamentsSearchPanel.SuspendLayout();
             this.TournamentsTableLayoutPanel.SuspendLayout();
             this.CreateTournamentTabPage.SuspendLayout();
             this.StatsTabPage.SuspendLayout();
-            this.TournamentsStatsTableLayoutPanel.SuspendLayout();
-            this.PlayersStatsTableLayoutPanel.SuspendLayout();
+            this.StatsTournamentPanel.SuspendLayout();
             this.TournamentsPanel.SuspendLayout();
+            this.TournamentsStatsTableLayoutPanel.SuspendLayout();
+            this.StatsPlayersPanel.SuspendLayout();
             this.PlayersPanel.SuspendLayout();
+            this.PlayersStatsTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // LogOutbutton
@@ -88,6 +98,7 @@ namespace ParMath
             this.LogOutbutton.ForeColor = System.Drawing.Color.White;
             this.LogOutbutton.Location = new System.Drawing.Point(781, 5);
             this.LogOutbutton.Margin = new System.Windows.Forms.Padding(1);
+            this.LogOutbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LogOutbutton.Name = "LogOutbutton";
             this.LogOutbutton.Size = new System.Drawing.Size(56, 42);
             this.LogOutbutton.TabIndex = 0;
@@ -97,6 +108,9 @@ namespace ParMath
             // 
             // TabControl
             // 
+            this.TabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TabControl.Controls.Add(this.TournamentsTabPage);
             this.TabControl.Controls.Add(this.CreateTournamentTabPage);
             this.TabControl.Controls.Add(this.StatsTabPage);
@@ -106,19 +120,12 @@ namespace ParMath
             this.TabControl.Name = "TabControl";
             this.TabControl.Padding = new System.Drawing.Point(40, 40);
             this.TabControl.SelectedIndex = 0;
-            this.TabControl.Size = new System.Drawing.Size(840, 503);
+            this.TabControl.Size = new System.Drawing.Size(1061, 489);
             this.TabControl.TabIndex = 1;
             // 
             // TournamentsTabPage
             // 
-            this.TournamentsTabPage.Controls.Add(this.StateComboBox);
-            this.TournamentsTabPage.Controls.Add(this.ToRegDateTimePicker);
-            this.TournamentsTabPage.Controls.Add(this.FromRegDateTimePicker);
-            this.TournamentsTabPage.Controls.Add(this.ToStartDateTimePicker);
-            this.TournamentsTabPage.Controls.Add(this.FromStartDateTimePicker);
-            this.TournamentsTabPage.Controls.Add(this.SearchByStateLabel);
-            this.TournamentsTabPage.Controls.Add(this.SearchByRegDateLabel);
-            this.TournamentsTabPage.Controls.Add(this.SearchByStartDateLabel);
+            this.TournamentsTabPage.Controls.Add(this.TournamentsSearchPanel);
             this.TournamentsTabPage.Controls.Add(this.TournamentsTableLayoutPanel);
             this.TournamentsTabPage.Controls.Add(this.ClearAllButton);
             this.TournamentsTabPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -131,13 +138,38 @@ namespace ParMath
             this.TournamentsTabPage.Text = "Tournaments";
             this.TournamentsTabPage.UseVisualStyleBackColor = true;
             // 
+            // TournamentsSearchPanel
+            // 
+            this.TournamentsSearchPanel.Controls.Add(this.SearchByStartDateLabel);
+            this.TournamentsSearchPanel.Controls.Add(this.StateComboBox);
+            this.TournamentsSearchPanel.Controls.Add(this.FromStartDateTimePicker);
+            this.TournamentsSearchPanel.Controls.Add(this.SearchByStateLabel);
+            this.TournamentsSearchPanel.Controls.Add(this.ToRegDateTimePicker);
+            this.TournamentsSearchPanel.Controls.Add(this.ToStartDateTimePicker);
+            this.TournamentsSearchPanel.Controls.Add(this.FromRegDateTimePicker);
+            this.TournamentsSearchPanel.Controls.Add(this.SearchByRegDateLabel);
+            this.TournamentsSearchPanel.Location = new System.Drawing.Point(4, 13);
+            this.TournamentsSearchPanel.Name = "TournamentsSearchPanel";
+            this.TournamentsSearchPanel.Size = new System.Drawing.Size(1045, 178);
+            this.TournamentsSearchPanel.TabIndex = 13;
+            // 
+            // SearchByStartDateLabel
+            // 
+            this.SearchByStartDateLabel.AutoSize = true;
+            this.SearchByStartDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SearchByStartDateLabel.Location = new System.Drawing.Point(15, 24);
+            this.SearchByStartDateLabel.Name = "SearchByStartDateLabel";
+            this.SearchByStartDateLabel.Size = new System.Drawing.Size(202, 17);
+            this.SearchByStartDateLabel.TabIndex = 5;
+            this.SearchByStartDateLabel.Text = "Search by start date (from , to)";
+            // 
             // StateComboBox
             // 
             this.StateComboBox.FormattingEnabled = true;
             this.StateComboBox.Location = new System.Drawing.Point(579, 43);
             this.StateComboBox.Margin = new System.Windows.Forms.Padding(1);
             this.StateComboBox.Name = "StateComboBox";
-            this.StateComboBox.Size = new System.Drawing.Size(170, 21);
+            this.StateComboBox.Size = new System.Drawing.Size(570, 21);
             this.StateComboBox.TabIndex = 12;
             // 
             // ToRegDateTimePicker
@@ -169,44 +201,55 @@ namespace ParMath
             this.FromStartDateTimePicker.Location = new System.Drawing.Point(7, 43);
             this.FromStartDateTimePicker.Margin = new System.Windows.Forms.Padding(1);
             this.FromStartDateTimePicker.Name = "FromStartDateTimePicker";
-            this.FromStartDateTimePicker.Size = new System.Drawing.Size(216, 20);
+            this.FromStartDateTimePicker.Size = new System.Drawing.Size(570, 20);
             this.FromStartDateTimePicker.TabIndex = 8;
             // 
             // SearchByStateLabel
             // 
             this.SearchByStateLabel.AutoSize = true;
             this.SearchByStateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SearchByStateLabel.Location = new System.Drawing.Point(576, 16);
-            this.SearchByStateLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.SearchByStateLabel.Location = new System.Drawing.Point(1195, 24);
             this.SearchByStateLabel.Name = "SearchByStateLabel";
             this.SearchByStateLabel.Size = new System.Drawing.Size(107, 17);
             this.SearchByStateLabel.TabIndex = 7;
             this.SearchByStateLabel.Text = "Search by state";
             // 
+            // ToRegDateTimePicker
+            // 
+            this.ToRegDateTimePicker.Location = new System.Drawing.Point(613, 119);
+            this.ToRegDateTimePicker.Name = "ToRegDateTimePicker";
+            this.ToRegDateTimePicker.Size = new System.Drawing.Size(352, 20);
+            this.ToRegDateTimePicker.TabIndex = 11;
+            // 
+            // ToStartDateTimePicker
+            // 
+            this.ToStartDateTimePicker.Location = new System.Drawing.Point(22, 119);
+            this.ToStartDateTimePicker.Name = "ToStartDateTimePicker";
+            this.ToStartDateTimePicker.Size = new System.Drawing.Size(570, 20);
+            this.ToStartDateTimePicker.TabIndex = 9;
+            // 
+            // FromRegDateTimePicker
+            // 
+            this.FromRegDateTimePicker.Location = new System.Drawing.Point(612, 75);
+            this.FromRegDateTimePicker.Name = "FromRegDateTimePicker";
+            this.FromRegDateTimePicker.Size = new System.Drawing.Size(353, 20);
+            this.FromRegDateTimePicker.TabIndex = 10;
+            // 
             // SearchByRegDateLabel
             // 
             this.SearchByRegDateLabel.AutoSize = true;
             this.SearchByRegDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SearchByRegDateLabel.Location = new System.Drawing.Point(291, 16);
-            this.SearchByRegDateLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.SearchByRegDateLabel.Location = new System.Drawing.Point(606, 24);
             this.SearchByRegDateLabel.Name = "SearchByRegDateLabel";
             this.SearchByRegDateLabel.Size = new System.Drawing.Size(191, 17);
             this.SearchByRegDateLabel.TabIndex = 6;
             this.SearchByRegDateLabel.Text = "Search by reg date (from, to)";
             // 
-            // SearchByStartDateLabel
-            // 
-            this.SearchByStartDateLabel.AutoSize = true;
-            this.SearchByStartDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SearchByStartDateLabel.Location = new System.Drawing.Point(4, 16);
-            this.SearchByStartDateLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.SearchByStartDateLabel.Name = "SearchByStartDateLabel";
-            this.SearchByStartDateLabel.Size = new System.Drawing.Size(202, 17);
-            this.SearchByStartDateLabel.TabIndex = 5;
-            this.SearchByStartDateLabel.Text = "Search by start date (from , to)";
-            // 
             // TournamentsTableLayoutPanel
             // 
+            this.TournamentsTableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TournamentsTableLayoutPanel.ColumnCount = 10;
             this.TournamentsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.TournamentsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -220,7 +263,6 @@ namespace ParMath
             this.TournamentsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.TournamentsTableLayoutPanel.Controls.Add(this.NameTournamentsRichTextBox, 0, 0);
             this.TournamentsTableLayoutPanel.Controls.Add(this.ModeRichTextBox, 1, 0);
-            this.TournamentsTableLayoutPanel.Controls.Add(this.PlaceRichTextBox, 2, 0);
             this.TournamentsTableLayoutPanel.Controls.Add(this.StartDateRichTextBox, 3, 0);
             this.TournamentsTableLayoutPanel.Controls.Add(this.LastRegDateRichTextBox, 4, 0);
             this.TournamentsTableLayoutPanel.Controls.Add(this.StateRichTextBox, 5, 0);
@@ -228,6 +270,7 @@ namespace ParMath
             this.TournamentsTableLayoutPanel.Controls.Add(this.ParticipantsRichTextBox, 7, 0);
             this.TournamentsTableLayoutPanel.Controls.Add(this.ScenarioRichTextBox, 8, 0);
             this.TournamentsTableLayoutPanel.Controls.Add(this.ActionsRichTextBox, 9, 0);
+            this.TournamentsTableLayoutPanel.Controls.Add(this.PlaceRichTextBox, 2, 0);
             this.TournamentsTableLayoutPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TournamentsTableLayoutPanel.Location = new System.Drawing.Point(6, 110);
             this.TournamentsTableLayoutPanel.Margin = new System.Windows.Forms.Padding(1);
@@ -236,32 +279,36 @@ namespace ParMath
             this.TournamentsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.TournamentsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.TournamentsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.TournamentsTableLayoutPanel.Size = new System.Drawing.Size(831, 170);
+            this.TournamentsTableLayoutPanel.Size = new System.Drawing.Size(1046, 178);
             this.TournamentsTableLayoutPanel.TabIndex = 4;
             // 
             // NameTournamentsRichTextBox
             // 
-            this.NameTournamentsRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NameTournamentsRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.NameTournamentsRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.NameTournamentsRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NameTournamentsRichTextBox.ForeColor = System.Drawing.Color.White;
             this.NameTournamentsRichTextBox.Location = new System.Drawing.Point(1, 1);
             this.NameTournamentsRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.NameTournamentsRichTextBox.Name = "NameTournamentsRichTextBox";
-            this.NameTournamentsRichTextBox.Size = new System.Drawing.Size(81, 54);
+            this.NameTournamentsRichTextBox.Size = new System.Drawing.Size(102, 57);
             this.NameTournamentsRichTextBox.TabIndex = 0;
             this.NameTournamentsRichTextBox.Text = "Name";
             // 
             // ModeRichTextBox
             // 
-            this.ModeRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ModeRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ModeRichTextBox.BackColor = System.Drawing.Color.Black;
             this.ModeRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ModeRichTextBox.ForeColor = System.Drawing.Color.White;
             this.ModeRichTextBox.Location = new System.Drawing.Point(84, 1);
             this.ModeRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.ModeRichTextBox.Name = "ModeRichTextBox";
-            this.ModeRichTextBox.Size = new System.Drawing.Size(81, 54);
+            this.ModeRichTextBox.Size = new System.Drawing.Size(98, 53);
             this.ModeRichTextBox.TabIndex = 1;
             this.ModeRichTextBox.Text = "Mode";
             // 
@@ -280,94 +327,120 @@ namespace ParMath
             // 
             // StartDateRichTextBox
             // 
-            this.StartDateRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.StartDateRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.StartDateRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.StartDateRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StartDateRichTextBox.ForeColor = System.Drawing.Color.White;
             this.StartDateRichTextBox.Location = new System.Drawing.Point(250, 1);
             this.StartDateRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.StartDateRichTextBox.Name = "StartDateRichTextBox";
-            this.StartDateRichTextBox.Size = new System.Drawing.Size(81, 54);
+            this.StartDateRichTextBox.Size = new System.Drawing.Size(98, 53);
             this.StartDateRichTextBox.TabIndex = 3;
             this.StartDateRichTextBox.Text = "Start date";
             // 
             // LastRegDateRichTextBox
             // 
-            this.LastRegDateRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LastRegDateRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.LastRegDateRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.LastRegDateRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LastRegDateRichTextBox.ForeColor = System.Drawing.Color.White;
             this.LastRegDateRichTextBox.Location = new System.Drawing.Point(333, 1);
             this.LastRegDateRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.LastRegDateRichTextBox.Name = "LastRegDateRichTextBox";
-            this.LastRegDateRichTextBox.Size = new System.Drawing.Size(81, 54);
+            this.LastRegDateRichTextBox.Size = new System.Drawing.Size(98, 53);
             this.LastRegDateRichTextBox.TabIndex = 4;
             this.LastRegDateRichTextBox.Text = "Last reg date";
             // 
             // StateRichTextBox
             // 
-            this.StateRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.StateRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.StateRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.StateRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StateRichTextBox.ForeColor = System.Drawing.Color.White;
             this.StateRichTextBox.Location = new System.Drawing.Point(416, 1);
             this.StateRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.StateRichTextBox.Name = "StateRichTextBox";
-            this.StateRichTextBox.Size = new System.Drawing.Size(81, 54);
+            this.StateRichTextBox.Size = new System.Drawing.Size(98, 53);
             this.StateRichTextBox.TabIndex = 5;
             this.StateRichTextBox.Text = "State";
             // 
             // LevelRichTextBox
             // 
-            this.LevelRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LevelRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.LevelRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.LevelRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LevelRichTextBox.ForeColor = System.Drawing.Color.White;
             this.LevelRichTextBox.Location = new System.Drawing.Point(499, 1);
             this.LevelRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.LevelRichTextBox.Name = "LevelRichTextBox";
-            this.LevelRichTextBox.Size = new System.Drawing.Size(81, 54);
+            this.LevelRichTextBox.Size = new System.Drawing.Size(98, 53);
             this.LevelRichTextBox.TabIndex = 6;
             this.LevelRichTextBox.Text = "Level";
             // 
             // ParticipantsRichTextBox
             // 
-            this.ParticipantsRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ParticipantsRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.ParticipantsRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ParticipantsRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ParticipantsRichTextBox.ForeColor = System.Drawing.Color.White;
             this.ParticipantsRichTextBox.Location = new System.Drawing.Point(582, 1);
             this.ParticipantsRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.ParticipantsRichTextBox.Name = "ParticipantsRichTextBox";
-            this.ParticipantsRichTextBox.Size = new System.Drawing.Size(81, 54);
+            this.ParticipantsRichTextBox.Size = new System.Drawing.Size(98, 53);
             this.ParticipantsRichTextBox.TabIndex = 7;
             this.ParticipantsRichTextBox.Text = "Participants";
             // 
             // ScenarioRichTextBox
             // 
-            this.ScenarioRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ScenarioRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.ScenarioRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ScenarioRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ScenarioRichTextBox.ForeColor = System.Drawing.Color.White;
             this.ScenarioRichTextBox.Location = new System.Drawing.Point(665, 1);
             this.ScenarioRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.ScenarioRichTextBox.Name = "ScenarioRichTextBox";
-            this.ScenarioRichTextBox.Size = new System.Drawing.Size(81, 54);
+            this.ScenarioRichTextBox.Size = new System.Drawing.Size(98, 53);
             this.ScenarioRichTextBox.TabIndex = 8;
             this.ScenarioRichTextBox.Text = "Scenario";
             // 
             // ActionsRichTextBox
             // 
-            this.ActionsRichTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ActionsRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.ActionsRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ActionsRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ActionsRichTextBox.ForeColor = System.Drawing.Color.White;
             this.ActionsRichTextBox.Location = new System.Drawing.Point(750, 1);
             this.ActionsRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.ActionsRichTextBox.Name = "ActionsRichTextBox";
-            this.ActionsRichTextBox.Size = new System.Drawing.Size(77, 54);
+            this.ActionsRichTextBox.Size = new System.Drawing.Size(104, 53);
             this.ActionsRichTextBox.TabIndex = 9;
             this.ActionsRichTextBox.Text = "Actions";
+            // 
+            // PlaceRichTextBox
+            // 
+            this.PlaceRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PlaceRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PlaceRichTextBox.Location = new System.Drawing.Point(211, 3);
+            this.PlaceRichTextBox.Name = "PlaceRichTextBox";
+            this.PlaceRichTextBox.Size = new System.Drawing.Size(98, 53);
+            this.PlaceRichTextBox.TabIndex = 2;
+            this.PlaceRichTextBox.Text = "Place";
             // 
             // ClearAllButton
             // 
@@ -375,6 +448,7 @@ namespace ParMath
             this.ClearAllButton.ForeColor = System.Drawing.Color.White;
             this.ClearAllButton.Location = new System.Drawing.Point(769, 19);
             this.ClearAllButton.Margin = new System.Windows.Forms.Padding(1);
+            this.ClearAllButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ClearAllButton.Name = "ClearAllButton";
             this.ClearAllButton.Size = new System.Drawing.Size(56, 42);
             this.ClearAllButton.TabIndex = 3;
@@ -399,8 +473,10 @@ namespace ParMath
             this.CupGridButton.ForeColor = System.Drawing.Color.White;
             this.CupGridButton.Location = new System.Drawing.Point(250, 12);
             this.CupGridButton.Margin = new System.Windows.Forms.Padding(1);
+            this.CupGridButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CupGridButton.Name = "CupGridButton";
-            this.CupGridButton.Size = new System.Drawing.Size(375, 335);
+            this.CupGridButton.Size = new System.Drawing.Size(192, 90);
             this.CupGridButton.TabIndex = 1;
             this.CupGridButton.Text = "Cup grid";
             this.CupGridButton.UseVisualStyleBackColor = false;
@@ -408,10 +484,8 @@ namespace ParMath
             // 
             // StatsTabPage
             // 
-            this.StatsTabPage.Controls.Add(this.TournamentsStatsTableLayoutPanel);
-            this.StatsTabPage.Controls.Add(this.PlayersStatsTableLayoutPanel);
-            this.StatsTabPage.Controls.Add(this.TournamentsPanel);
-            this.StatsTabPage.Controls.Add(this.PlayersPanel);
+            this.StatsTabPage.Controls.Add(this.StatsTournamentPanel);
+            this.StatsTabPage.Controls.Add(this.StatsPlayersPanel);
             this.StatsTabPage.Location = new System.Drawing.Point(4, 107);
             this.StatsTabPage.Margin = new System.Windows.Forms.Padding(1);
             this.StatsTabPage.Name = "StatsTabPage";
@@ -421,8 +495,42 @@ namespace ParMath
             this.StatsTabPage.Text = "Stats";
             this.StatsTabPage.UseVisualStyleBackColor = true;
             // 
+            // StatsTournamentPanel
+            // 
+            this.StatsTournamentPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.StatsTournamentPanel.Controls.Add(this.TournamentsPanel);
+            this.StatsTournamentPanel.Controls.Add(this.TournamentsStatsTableLayoutPanel);
+            this.StatsTournamentPanel.Location = new System.Drawing.Point(22, 478);
+            this.StatsTournamentPanel.Name = "StatsTournamentPanel";
+            this.StatsTournamentPanel.Size = new System.Drawing.Size(2175, 350);
+            this.StatsTournamentPanel.TabIndex = 5;
+            // 
+            // TournamentsPanel
+            // 
+            this.TournamentsPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TournamentsPanel.Controls.Add(this.TournamentsLabel);
+            this.TournamentsPanel.Location = new System.Drawing.Point(15, 3);
+            this.TournamentsPanel.Name = "TournamentsPanel";
+            this.TournamentsPanel.Size = new System.Drawing.Size(2144, 98);
+            this.TournamentsPanel.TabIndex = 1;
+            // 
+            // TournamentsLabel
+            // 
+            this.TournamentsLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TournamentsLabel.AutoSize = true;
+            this.TournamentsLabel.Location = new System.Drawing.Point(916, 22);
+            this.TournamentsLabel.Name = "TournamentsLabel";
+            this.TournamentsLabel.Size = new System.Drawing.Size(133, 24);
+            this.TournamentsLabel.TabIndex = 0;
+            this.TournamentsLabel.Text = "Tournaments";
+            // 
             // TournamentsStatsTableLayoutPanel
             // 
+            this.TournamentsStatsTableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TournamentsStatsTableLayoutPanel.ColumnCount = 4;
             this.TournamentsStatsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.TournamentsStatsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -438,59 +546,105 @@ namespace ParMath
             this.TournamentsStatsTableLayoutPanel.RowCount = 2;
             this.TournamentsStatsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.TournamentsStatsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TournamentsStatsTableLayoutPanel.Size = new System.Drawing.Size(806, 88);
+            this.TournamentsStatsTableLayoutPanel.Size = new System.Drawing.Size(2149, 217);
             this.TournamentsStatsTableLayoutPanel.TabIndex = 3;
             // 
             // ActiveRichTextBox
             // 
             this.ActiveRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.ActiveRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ActiveRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ActiveRichTextBox.ForeColor = System.Drawing.Color.White;
             this.ActiveRichTextBox.Location = new System.Drawing.Point(202, 1);
             this.ActiveRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.ActiveRichTextBox.Name = "ActiveRichTextBox";
-            this.ActiveRichTextBox.Size = new System.Drawing.Size(199, 42);
+            this.ActiveRichTextBox.Size = new System.Drawing.Size(535, 106);
             this.ActiveRichTextBox.TabIndex = 1;
             this.ActiveRichTextBox.Text = "Active";
             // 
             // FinishedRichTextBox
             // 
             this.FinishedRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.FinishedRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.FinishedRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FinishedRichTextBox.ForeColor = System.Drawing.Color.White;
             this.FinishedRichTextBox.Location = new System.Drawing.Point(403, 1);
             this.FinishedRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.FinishedRichTextBox.Name = "FinishedRichTextBox";
-            this.FinishedRichTextBox.Size = new System.Drawing.Size(199, 42);
+            this.FinishedRichTextBox.Size = new System.Drawing.Size(535, 106);
             this.FinishedRichTextBox.TabIndex = 2;
             this.FinishedRichTextBox.Text = "Finished";
             // 
             // NotStartedRichTextBox
             // 
             this.NotStartedRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.NotStartedRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.NotStartedRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NotStartedRichTextBox.ForeColor = System.Drawing.Color.White;
             this.NotStartedRichTextBox.Location = new System.Drawing.Point(604, 1);
             this.NotStartedRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.NotStartedRichTextBox.Name = "NotStartedRichTextBox";
-            this.NotStartedRichTextBox.Size = new System.Drawing.Size(201, 42);
+            this.NotStartedRichTextBox.Size = new System.Drawing.Size(536, 106);
             this.NotStartedRichTextBox.TabIndex = 3;
             this.NotStartedRichTextBox.Text = "Not started";
             // 
             // NumberOfTournamentsRichTextBox
             // 
             this.NumberOfTournamentsRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.NumberOfTournamentsRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.NumberOfTournamentsRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NumberOfTournamentsRichTextBox.ForeColor = System.Drawing.Color.White;
             this.NumberOfTournamentsRichTextBox.Location = new System.Drawing.Point(1, 1);
             this.NumberOfTournamentsRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.NumberOfTournamentsRichTextBox.Name = "NumberOfTournamentsRichTextBox";
-            this.NumberOfTournamentsRichTextBox.Size = new System.Drawing.Size(199, 42);
+            this.NumberOfTournamentsRichTextBox.Size = new System.Drawing.Size(535, 106);
             this.NumberOfTournamentsRichTextBox.TabIndex = 0;
             this.NumberOfTournamentsRichTextBox.Text = "Number of tournaments";
             // 
+            // StatsPlayersPanel
+            // 
+            this.StatsPlayersPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.StatsPlayersPanel.Controls.Add(this.PlayersPanel);
+            this.StatsPlayersPanel.Controls.Add(this.PlayersStatsTableLayoutPanel);
+            this.StatsPlayersPanel.Location = new System.Drawing.Point(3, 4);
+            this.StatsPlayersPanel.Name = "StatsPlayersPanel";
+            this.StatsPlayersPanel.Size = new System.Drawing.Size(1045, 370);
+            this.StatsPlayersPanel.TabIndex = 4;
+            // 
+            // PlayersPanel
+            // 
+            this.PlayersPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PlayersPanel.Controls.Add(this.PlayersLabel);
+            this.PlayersPanel.Location = new System.Drawing.Point(455, 51);
+            this.PlayersPanel.Name = "PlayersPanel";
+            this.PlayersPanel.Size = new System.Drawing.Size(134, 50);
+            this.PlayersPanel.TabIndex = 0;
+            // 
+            // PlayersLabel
+            // 
+            this.PlayersLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PlayersLabel.AutoSize = true;
+            this.PlayersLabel.Location = new System.Drawing.Point(25, 14);
+            this.PlayersLabel.Name = "PlayersLabel";
+            this.PlayersLabel.Size = new System.Drawing.Size(78, 24);
+            this.PlayersLabel.TabIndex = 0;
+            this.PlayersLabel.Text = "Players";
+            // 
             // PlayersStatsTableLayoutPanel
             // 
+            this.PlayersStatsTableLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PlayersStatsTableLayoutPanel.ColumnCount = 5;
             this.PlayersStatsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.PlayersStatsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -508,66 +662,81 @@ namespace ParMath
             this.PlayersStatsTableLayoutPanel.RowCount = 2;
             this.PlayersStatsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.PlayersStatsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PlayersStatsTableLayoutPanel.Size = new System.Drawing.Size(806, 81);
+            this.PlayersStatsTableLayoutPanel.Size = new System.Drawing.Size(1020, 170);
             this.PlayersStatsTableLayoutPanel.TabIndex = 2;
             // 
             // NameStatsRichTextBox
             // 
             this.NameStatsRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.NameStatsRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.NameStatsRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NameStatsRichTextBox.ForeColor = System.Drawing.Color.White;
             this.NameStatsRichTextBox.Location = new System.Drawing.Point(1, 1);
             this.NameStatsRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.NameStatsRichTextBox.Name = "NameStatsRichTextBox";
-            this.NameStatsRichTextBox.Size = new System.Drawing.Size(159, 38);
+            this.NameStatsRichTextBox.Size = new System.Drawing.Size(202, 83);
             this.NameStatsRichTextBox.TabIndex = 0;
             this.NameStatsRichTextBox.Text = "Name";
             // 
             // GamesRichTextBox
             // 
             this.GamesRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.GamesRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GamesRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.GamesRichTextBox.ForeColor = System.Drawing.Color.White;
             this.GamesRichTextBox.Location = new System.Drawing.Point(162, 1);
             this.GamesRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.GamesRichTextBox.Name = "GamesRichTextBox";
-            this.GamesRichTextBox.Size = new System.Drawing.Size(159, 38);
+            this.GamesRichTextBox.Size = new System.Drawing.Size(202, 83);
             this.GamesRichTextBox.TabIndex = 1;
             this.GamesRichTextBox.Text = "Games";
             // 
             // WinsRichTextBox
             // 
             this.WinsRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.WinsRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.WinsRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.WinsRichTextBox.ForeColor = System.Drawing.Color.White;
             this.WinsRichTextBox.Location = new System.Drawing.Point(323, 1);
             this.WinsRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.WinsRichTextBox.Name = "WinsRichTextBox";
-            this.WinsRichTextBox.Size = new System.Drawing.Size(159, 38);
+            this.WinsRichTextBox.Size = new System.Drawing.Size(202, 83);
             this.WinsRichTextBox.TabIndex = 2;
             this.WinsRichTextBox.Text = "Wins";
             // 
             // LosesRichTextBox
             // 
             this.LosesRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.LosesRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.LosesRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LosesRichTextBox.ForeColor = System.Drawing.Color.White;
             this.LosesRichTextBox.Location = new System.Drawing.Point(484, 1);
             this.LosesRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.LosesRichTextBox.Name = "LosesRichTextBox";
-            this.LosesRichTextBox.Size = new System.Drawing.Size(159, 38);
+            this.LosesRichTextBox.Size = new System.Drawing.Size(202, 83);
             this.LosesRichTextBox.TabIndex = 3;
             this.LosesRichTextBox.Text = "Loses";
             // 
             // CupWinsRichTextBox
             // 
             this.CupWinsRichTextBox.BackColor = System.Drawing.Color.Black;
+            this.CupWinsRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CupWinsRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CupWinsRichTextBox.ForeColor = System.Drawing.Color.White;
             this.CupWinsRichTextBox.Location = new System.Drawing.Point(645, 1);
             this.CupWinsRichTextBox.Margin = new System.Windows.Forms.Padding(1);
             this.CupWinsRichTextBox.Name = "CupWinsRichTextBox";
-            this.CupWinsRichTextBox.Size = new System.Drawing.Size(160, 38);
+            this.CupWinsRichTextBox.Size = new System.Drawing.Size(202, 83);
             this.CupWinsRichTextBox.TabIndex = 4;
             this.CupWinsRichTextBox.Text = "Cup wins";
             // 
@@ -639,19 +808,22 @@ namespace ParMath
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "TournametForm";
             this.Text = "TournamentForm";
-            this.Load += new System.EventHandler(this.TournametForm_Load);
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.TabControl.ResumeLayout(false);
             this.TournamentsTabPage.ResumeLayout(false);
-            this.TournamentsTabPage.PerformLayout();
+            this.TournamentsSearchPanel.ResumeLayout(false);
+            this.TournamentsSearchPanel.PerformLayout();
             this.TournamentsTableLayoutPanel.ResumeLayout(false);
             this.CreateTournamentTabPage.ResumeLayout(false);
             this.StatsTabPage.ResumeLayout(false);
-            this.TournamentsStatsTableLayoutPanel.ResumeLayout(false);
-            this.PlayersStatsTableLayoutPanel.ResumeLayout(false);
+            this.StatsTournamentPanel.ResumeLayout(false);
             this.TournamentsPanel.ResumeLayout(false);
             this.TournamentsPanel.PerformLayout();
+            this.TournamentsStatsTableLayoutPanel.ResumeLayout(false);
+            this.StatsPlayersPanel.ResumeLayout(false);
             this.PlayersPanel.ResumeLayout(false);
             this.PlayersPanel.PerformLayout();
+            this.PlayersStatsTableLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -687,8 +859,6 @@ namespace ParMath
         private System.Windows.Forms.RichTextBox WinsRichTextBox;
         private System.Windows.Forms.RichTextBox LosesRichTextBox;
         private System.Windows.Forms.RichTextBox CupWinsRichTextBox;
-        private System.Windows.Forms.Panel TournamentsPanel;
-        private System.Windows.Forms.Label TournamentsLabel;
         private System.Windows.Forms.Panel PlayersPanel;
         private System.Windows.Forms.Label PlayersLabel;
         private System.Windows.Forms.DateTimePicker ToRegDateTimePicker;
@@ -700,5 +870,10 @@ namespace ParMath
         private System.Windows.Forms.Label SearchByStartDateLabel;
         private System.Windows.Forms.ComboBox StateComboBox;
         private System.Windows.Forms.Button GoToMyAccountButton;
+        private System.Windows.Forms.Panel TournamentsPanel;
+        private System.Windows.Forms.Label TournamentsLabel;
+        private System.Windows.Forms.Panel StatsPlayersPanel;
+        private System.Windows.Forms.Panel StatsTournamentPanel;
+        private System.Windows.Forms.Panel TournamentsSearchPanel;
     }
 }

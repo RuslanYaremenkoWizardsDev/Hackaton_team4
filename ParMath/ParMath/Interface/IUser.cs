@@ -10,6 +10,5 @@ namespace ParMath.Interface
         int TotalGames { get; set; }
         int CupsLoses { get; set; }
         int CupsWins { get; set; }
-        List<Tournament> CurrentTournament { get; set; }
     }
 }

@@ -9,7 +9,8 @@ namespace ParMath.Class
     {
         private static Engine _engine;
         public List<User> Users;
-
+        public List<Tournament> Tournaments;
+        public User CurrentUser { get; set; }
         private Engine()
         {
             Users = new List<User>();
@@ -25,6 +26,7 @@ namespace ParMath.Class
                     if (user.Password == password)
                     {
                         isExist = true;
+                        CurrentUser = user;
                     } else
                     {
                         isExist = false;

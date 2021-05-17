@@ -1,12 +1,6 @@
 ﻿using ParMath.Class;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
 
 namespace ParMath
@@ -15,6 +9,7 @@ namespace ParMath
     {
         AuthorizationForm authorizationForm;
         private Engine _currentEngine;
+        private CreateTournamentForm CreateTournamentForm;
 
         public TournametForm()
         {
@@ -127,6 +122,7 @@ namespace ParMath
                 NotStartedRichTextBox.BackColor = Color.Black;
                 NotStartedRichTextBox.ForeColor = Color.White;
             }
+            CreateTournamentForm = new CreateTournamentForm();
         }
         private void TournametForm_Load(object sender, EventArgs e)
         {
@@ -150,7 +146,6 @@ namespace ParMath
 
         private void CupGridButton_Click(object sender, EventArgs e)
         {
-            CreateTournamentForm createTournament = new CreateTournamentForm();
             createTournament.Show();
             this.Hide();
         }

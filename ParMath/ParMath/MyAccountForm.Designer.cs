@@ -41,6 +41,7 @@ namespace ParMath
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.ThemeButton = new System.Windows.Forms.Button();
             this.GoToTournamentButton = new System.Windows.Forms.Button();
+            this.ErrorMessage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.IconPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,12 +165,23 @@ namespace ParMath
             this.GoToTournamentButton.UseVisualStyleBackColor = false;
             this.GoToTournamentButton.Click += new System.EventHandler(this.GoToTournamentButton_Click);
             // 
+            // ErrorMessage
+            // 
+            this.ErrorMessage.AutoSize = true;
+            this.ErrorMessage.BackColor = System.Drawing.Color.Red;
+            this.ErrorMessage.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.ErrorMessage.Location = new System.Drawing.Point(38, 13);
+            this.ErrorMessage.Name = "ErrorMessage";
+            this.ErrorMessage.Size = new System.Drawing.Size(0, 13);
+            this.ErrorMessage.TabIndex = 18;
+            // 
             // MyAccountForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(514, 309);
+            this.Controls.Add(this.ErrorMessage);
             this.Controls.Add(this.GoToTournamentButton);
             this.Controls.Add(this.ThemeButton);
             this.Controls.Add(this.IconPictureBox);
@@ -201,5 +213,6 @@ namespace ParMath
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button ThemeButton;
         private System.Windows.Forms.Button GoToTournamentButton;
+        private System.Windows.Forms.Label ErrorMessage;
     }
 }

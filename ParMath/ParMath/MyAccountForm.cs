@@ -13,9 +13,15 @@ namespace ParMath
 {
     public partial class MyAccountForm : Form
     {
+        private Engine _currentEngine;
         public MyAccountForm()
         {
             InitializeComponent();
+        }
+        private void MyAccountForm_Load(object sender, EventArgs e)
+        {
+            ChangeThemeMethod();
+            _currentEngine = Engine.GetEngine();
         }
         private void SettingsButton_Click(object sender, EventArgs e)
         {
@@ -80,6 +86,20 @@ namespace ParMath
             NewPasswordLabel.Visible = false;
             NewPasswordTextBox.Visible = false;
             SaveButton.Visible = false;
+            if (!(OldPasswordTextBox.Text.Length >= 255) || !(NewPasswordTextBox.Text.Length >= 255) || !(OldPasswordTextBox.Text.Length < 6) || !(NewPasswordTextBox.Text.Length < 6))
+            {
+                if (OldPasswordTextBox.Text == NewPasswordTextBox.Text)
+                {
+                    ErrorMessage.Text = "";
+                    _currentEngine.CurrentUser.Password = NewPasswordTextBox.Text;
+                } else
+                {
+                    ErrorMessage.Text = "Error: password mismatch";
+                }
+            } else
+            {
+                ErrorMessage.Text = "Error: password must be between 6 and 255 characters.";
+            }
         }
 
         private void GoToAuthorizationButton_Click(object sender, EventArgs e)
@@ -101,12 +121,6 @@ namespace ParMath
             }
             ChangeThemeMethod();
         }
-
-        private void MyAccountForm_Load(object sender, EventArgs e)
-        {
-            ChangeThemeMethod();
-        }
-
         private void GoToTournierButton_Click(object sender, EventArgs e)
         {
             CreateTournamentForm createTournament = new CreateTournamentForm();

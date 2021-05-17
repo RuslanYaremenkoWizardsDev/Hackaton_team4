@@ -13,7 +13,7 @@ namespace ParMath
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CupGridForm());
+            Application.Run(new AuthorizationForm());
 
         }
     }

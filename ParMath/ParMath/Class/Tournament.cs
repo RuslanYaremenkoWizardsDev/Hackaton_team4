@@ -9,7 +9,7 @@ namespace ParMath.Class
 
     public class Tournament : ITournament
     {
-        
+
         public string NameTournament { get; set; }
         public string Description { get; set; }
         public string StartDate { get; set; }

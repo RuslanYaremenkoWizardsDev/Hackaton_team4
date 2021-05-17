@@ -9,10 +9,12 @@ namespace ParMath
     {
         AuthorizationForm authorizationForm;
         private Engine _currentEngine;
+        private CreateTournamentForm CreateTournamentForm;
 
         public TournametForm()
         {
             InitializeComponent();
+            CreateTournamentForm = new CreateTournamentForm();
         }
         private void TournametForm_Load(object sender, EventArgs e)
         {
@@ -24,6 +26,12 @@ namespace ParMath
         {
             _currentEngine.SaveAllUsers();
             authorizationForm.Show();
+            this.Hide();
+        }
+
+        private void CupGridButton_Click(object sender, EventArgs e)
+        {
+            CreateTournamentForm.Show();
             this.Hide();
         }
     }

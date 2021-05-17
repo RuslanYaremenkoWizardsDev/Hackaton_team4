@@ -6,12 +6,10 @@ namespace ParMath.Class
 {
     public class User : IUser
     {
-        private string _username;
-        private string _password;
         public int TotalGames { get; set; }
         public int CupsLoses { get; set; }
         public int CupsWins { get; set; }
-        public List<Tournament> CurrentTournament { get; set; }
+        public List<Tournament> CurrentTournament = new List<Tournament>();
         public string Username { get; set; }
         public string Password { get; set; }
         private User(string username, string password)

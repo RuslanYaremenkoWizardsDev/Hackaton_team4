@@ -132,6 +132,7 @@ namespace ParMath
         }
         private void LogOutbutton_Click(object sender, EventArgs e)
         {
+            _currentEngine.SaveAllTurnaments();
             _currentEngine.SaveAllUsers();
             authorizationForm.Show();
             this.Hide();

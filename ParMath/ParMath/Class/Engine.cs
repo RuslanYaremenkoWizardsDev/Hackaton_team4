@@ -68,7 +68,16 @@ namespace ParMath.Class
             }
             return uniquely;
         }
-        
+        public void DeserializerUsers()
+        {
+            string fileContent = string.Empty;
+            using (StreamReader sr = new StreamReader("Users.txt"))
+            {
+                fileContent = sr.ReadToEnd();
+            }
+            Users = JsonConvert.DeserializeObject<List<User>>(fileContent);
+        }
+
         public void SaveAllUsers()
         {
             using (StreamWriter sw = new StreamWriter("Users.txt"))

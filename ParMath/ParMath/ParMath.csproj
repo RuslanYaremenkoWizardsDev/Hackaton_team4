@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\ChangeTheme.cs" />
     <Compile Include="Class\Engine.cs" />
     <Compile Include="Class\Tournament.cs" />
     <Compile Include="Class\User.cs" />

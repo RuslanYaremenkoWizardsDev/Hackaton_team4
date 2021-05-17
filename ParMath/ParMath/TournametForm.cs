@@ -28,8 +28,6 @@ namespace ParMath
                 CupGridButton.ForeColor = Color.Black;
                 TournamentsPanel.BackColor = Color.White;
                 TournamentsPanel.ForeColor = Color.Black;
-                PlayersPanel.BackColor = Color.White;
-                PlayersPanel.ForeColor = Color.Black;
                 NameTournamentsRichTextBox.BackColor = Color.White;
                 NameTournamentsRichTextBox.ForeColor = Color.Black;
                 ModeRichTextBox.BackColor = Color.White;
@@ -82,8 +80,6 @@ namespace ParMath
                 CupGridButton.ForeColor = Color.White;
                 TournamentsPanel.BackColor = Color.Black;
                 TournamentsPanel.ForeColor = Color.White;
-                PlayersPanel.BackColor = Color.Black;
-                PlayersPanel.ForeColor = Color.White;
                 NameTournamentsRichTextBox.BackColor = Color.Black;
                 NameTournamentsRichTextBox.ForeColor = Color.White;
                 ModeRichTextBox.BackColor = Color.Black;
@@ -152,6 +148,11 @@ namespace ParMath
         {
             CreateTournamentForm.Show();
             this.Hide();
+        }
+
+        private void ScenarioRichTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
